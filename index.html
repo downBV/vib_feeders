@@ -34,7 +34,7 @@
                         </svg>
                     </div>
                     <h3>Rezgőtányérok</h3>
-                    <p>BF Sorozat - Körkörös adagolók</p>
+                    <p>BF, WFL és RNA Sorozatok</p>
                     <button class="btn-primary">Részletek</button>
                 </div>
 
@@ -68,16 +68,17 @@
     <div id="bowl-feeders-page" class="page">
         <div class="container">
             <button class="btn-back">← Vissza a főoldalra</button>
-            <h2 class="page-title">Rezgőtányérok - BF Sorozat</h2>
-            <p class="page-description">Körkörös szállítás tálcában, szubkritikus hangolással</p>
+            <h2 class="page-title">Rezgőtányérok</h2>
+            <p class="page-description">Rezgőtányér meghajtások különböző gyártóktól</p>
             
             <div class="product-grid">
+                <!-- BF Sorozat (AFAG) -->
                 <div class="product-card">
                     <div class="product-image">
                         <img src="bowl_feeder.jpg" alt="BF Sorozat Rezgőtányér">
                     </div>
                     <div class="product-info">
-                        <h3>BF Sorozat</h3>
+                        <h3>BF Sorozat (AFAG)</h3>
                         <p class="product-models">BF20, BF25, BF30, BF35, BF40, BF50</p>
                         <ul class="product-features">
                             <li>Körkörös szállítás tálcában</li>
@@ -94,6 +95,111 @@
                                 Dokumentáció
                             </button>
                             <button class="btn-secondary" onclick="downloadDoc('bf')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Letöltés
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WFL Sorozat (VIBROTEC) -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="wfl_talak.jpg" alt="WFL Sorozat Tálrezgő">
+                    </div>
+                    <div class="product-info">
+                        <h3>WFL Sorozat (VIBROTEC AG)</h3>
+                        <p class="product-models">WFL 150, WFL 200, WFL 300, WFL 450</p>
+                        <ul class="product-features">
+                            <li><strong>WFL 150:</strong> Ø 440 mm, 30-40 kg, légrés 0.4 mm</li>
+                            <li><strong>WFL 200:</strong> Ø 470-500 mm, légrés 0.5 mm</li>
+                            <li><strong>WFL 300:</strong> Ø ~600 mm, légrés 0.6 mm</li>
+                            <li><strong>WFL 450:</strong> Ø ~800 mm, légrés 1.2 mm</li>
+                            <li>230V / 50Hz, rugó-tömeg rendszer</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('wfl-series')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Dokumentáció
+                            </button>
+                            <button class="btn-secondary" onclick="downloadDoc('wfl')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Letöltés
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RNA SRC-N Sorozat -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="rna_talak.png" alt="RNA SRC-N Sorozat">
+                    </div>
+                    <div class="product-info">
+                        <h3>RNA SRC-N Sorozat</h3>
+                        <p class="product-models">SRC-N 160, 250, 400, 630, 800</p>
+                        <ul class="product-features">
+                            <li><strong>SRC-N 400-2:</strong> Ø 440 mm, 103 kg, 100 Hz, légrés 1.0-1.2 mm</li>
+                            <li><strong>SRC-N 630-1:</strong> Ø 660 mm, 168 kg, 50 Hz, légrés 2.3-2.8 mm</li>
+                            <li><strong>SRC-N 800-1:</strong> Ø 805 mm, 270 kg, 50 Hz, légrés 2.0-3.0 mm</li>
+                            <li>220V / 50Hz, IP 54 védelem</li>
+                            <li>Max. rezgő tömeg: 35-80 kg (típusfüggő)</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('rna-srcn-series')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Dokumentáció
+                            </button>
+                            <button class="btn-secondary" onclick="downloadDoc('rna-srcn')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Letöltés
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RNA SRHL Sorozat -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="rna_talak.png" alt="RNA SRHL Sorozat">
+                    </div>
+                    <div class="product-info">
+                        <h3>RNA SRHL Sorozat</h3>
+                        <p class="product-models">SRHL 400-1</p>
+                        <ul class="product-features">
+                            <li><strong>SRHL 400-1:</strong> Ø 470 mm, 140 kg</li>
+                            <li>50 Hz rezgési frekvencia</li>
+                            <li>220V / 50Hz, 1140 VA teljesítmény</li>
+                            <li>2 mágnes (YZUW 090), 6 rugócsomag</li>
+                            <li>Légrés: 2.0-2.8 mm, max. rezgő tömeg: 45 kg</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('rna-srhl-series')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Dokumentáció
+                            </button>
+                            <button class="btn-secondary" onclick="downloadDoc('rna-srhl')">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                                     <polyline points="7 10 12 15 17 10"/>

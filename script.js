@@ -55,6 +55,8 @@ function showPage(pageId) {
         targetPage = document.getElementById('bowl-feeders-page');
     } else if (pageId === 'linear-feeders') {
         targetPage = document.getElementById('linear-feeders-page');
+    } else if (pageId === 'bowl-vibrators') {
+        targetPage = document.getElementById('bowl-vibrators-page');
     } else if (pageId === 'controllers') {
         targetPage = document.getElementById('controllers-page');
     }
@@ -977,6 +979,1737 @@ function getDocumentation(type) {
                         <p>Hasznos tömeg = Ellensúly</p>
                         <p><strong>Aszimmetrikus (KLF7, KLF15):</strong></p>
                         <p>Hasznos tömeg > Ellensúly (meghatározott különbség szükséges)</p>
+                    </div>
+                </div>
+            `
+        },
+        'wfl-series': {
+            title: 'WFL Sorozat - Tálrezgők (VIBROTEC AG)',
+            content: `
+                <div class="doc-content">
+                    <h1>WFL SOROZAT ÁTTEKINTÉSE</h1>
+                    
+                    <div class="doc-section">
+                        <h2>1.1 Modellek és Műszaki Adatok</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Modell</th>
+                                    <th>Tányér Ø</th>
+                                    <th>Tömeg</th>
+                                    <th>Légrés</th>
+                                    <th>Alaplemez</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>WFL 150</td>
+                                    <td>440 mm</td>
+                                    <td>30-40 kg</td>
+                                    <td>0.4 mm</td>
+                                    <td>10 mm acél</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 200</td>
+                                    <td>470-500 mm</td>
+                                    <td>-</td>
+                                    <td>0.5 mm</td>
+                                    <td>10 mm acél</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 300</td>
+                                    <td>~600 mm</td>
+                                    <td>-</td>
+                                    <td>0.6 mm</td>
+                                    <td>15 mm acél</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 450</td>
+                                    <td>~800 mm</td>
+                                    <td>-</td>
+                                    <td>1.2 mm</td>
+                                    <td>15 mm acél</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><strong>Közös jellemzők:</strong></p>
+                        <ul>
+                            <li>Tápfeszültség: 230V / 50Hz</li>
+                            <li>Rugó-tömeg rendszer hangolással</li>
+                            <li>Gumipuffer rezgéscsillapítás</li>
+                        </ul>
+                    </div>
+
+                    <h1>2. BIZTONSÁGI ELŐÍRÁSOK</h1>
+
+                    <div class="danger-box">
+                        <h3>⚠️ VESZÉLY - Áramütés!</h3>
+                        <ul>
+                            <li>Minden elektromos munka előtt: ÁRAMTALANÍTÁS!</li>
+                            <li>Csak képzett villanyszerelő végezheti!</li>
+                            <li>Védőföldelés kötelező!</li>
+                        </ul>
+                    </div>
+
+                    <div class="warning-box">
+                        <h3>⚠️ FIGYELEM!</h3>
+                        <ul>
+                            <li>Soha ne működtesse védőburkolatok és fedőlapok nélkül!</li>
+                            <li>Első bekapcsoláskor a tálca ÜRES legyen!</li>
+                            <li>Ne működtesse robbanásveszélyes környezetben!</li>
+                        </ul>
+                    </div>
+
+                    <h1>3. TELEPÍTÉS</h1>
+
+                    <div class="doc-section">
+                        <h2>3.1 Szállítás és Kicsomagolás</h2>
+                        <p><strong>⚠️ FIGYELMEZTETÉS:</strong></p>
+                        <ul>
+                            <li>Ne emelje vagy mozgassa a tányért a szortírozó edénynél fogva</li>
+                            <li>Ügyeljen arra, hogy ne ütközzön más tárgyakkal</li>
+                            <li>Ellenőrizze az emelőberendezés teherbírását</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.2 Mechanikai Rögzítés</h2>
+                        <p><strong>FONTOS:</strong> Ha lehetséges, ne változtassa meg a gyárban beállított értékeket!</p>
+                        <ol>
+                            <li>Rögzítse a rezgőtányért az alaplapon lévő négy gumipuffer menetén keresztül</li>
+                            <li>A szortírozó tálcát a központi csavar meglazítása után forgassa a kívánt pozícióba</li>
+                            <li>Húzza meg újra a központi csavart</li>
+                            <li>Ellenőrizze, hogy szomszédos géprészek ne érintkezzenek a rezgőtányérral</li>
+                        </ol>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.3 Elektromos Csatlakoztatás</h2>
+                        <ol>
+                            <li>Csatlakoztassa a rezgőtányért a vezérlőhöz</li>
+                            <li>Csatlakoztassa a vezérlőt a hálózathoz (230V/50Hz)</li>
+                            <li>Ellenőrizze a földelést</li>
+                            <li>Csak megfelelő VIBROTEC vagy kompatibilis vezérlő használható!</li>
+                        </ol>
+                    </div>
+
+                    <h1>4. ÜZEMBE HELYEZÉS</h1>
+
+                    <div class="doc-section">
+                        <h2>4.1 Első Bekapcsolás</h2>
+                        <p>⚠️ A tálca legyen ÜRES az első bekapcsoláskor!</p>
+                        <ol>
+                            <li>Csatlakoztassa a vezérlőt a hálózathoz</li>
+                            <li>Kapcsolja be a vezérlőt</li>
+                            <li>Állítsa a vezérlő teljesítményét 0%-ról fokozatosan 100%-ra</li>
+                            <li>Egyenletes zümmögésnek kell hallhatónak lennie</li>
+                            <li><strong>Kemény, kopogó vagy kalapáló hangok hibát jeleznek - azonnal állítsa le!</strong></li>
+                        </ol>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>4.2 Működés Ellenőrzése</h2>
+                        <ol>
+                            <li>Állítsa a vezérlőt kb. 50%-ra</li>
+                            <li>Töltse fel a tálcát maximum 1/3 magasságig alkatrészekkel</li>
+                            <li>Szükség esetén növelje a teljesítményt</li>
+                            <li>A gyári beállítások szerint 50-80% pozícióban kell elérni a kívánt teljesítményt</li>
+                        </ol>
+                        <p><strong>FONTOS:</strong> Ne tekerje fel a vezérlőt a szükségesnél jobban!</p>
+                    </div>
+
+                    <h1>5. BEÁLLÍTÁSOK ÉS HANGOLÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>5.1 Légrés Ellenőrzése és Beállítása</h2>
+                        <p><strong>⚠️ KRITIKUS PARAMÉTER!</strong></p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Modell</th>
+                                    <th>Légrés</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>WFL 150</td>
+                                    <td>0.4 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 200</td>
+                                    <td>0.5 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 300</td>
+                                    <td>0.6 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 450</td>
+                                    <td>1.2 mm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>5.2 Rugóállandó Megváltoztatása</h2>
+                        <p>⚠️ FIGYELEM: Ez a művelet speciális szakértelmet igényel!</p>
+                        <ol>
+                            <li>Kapcsolja be a rezgőtányért és állítson be lassú sebességet</li>
+                            <li>Óvatosan oldja meg egy rugócsomag alsó rögzítőcsavarját</li>
+                            <li>Figyelje a szállítási sebesség változását:
+                                <ul>
+                                    <li>Ha a sebesség <strong>NŐ</strong> → el kell távolítani egy rugót</li>
+                                    <li>Ha a sebesség <strong>CSÖKKEN</strong> → hozzá kell adni egy rugót</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <p><strong>FONTOS SZABÁLYOK:</strong></p>
+                        <ul>
+                            <li>Az egyes rugócsomagoknak azonos számú rugót kell tartalmazniuk</li>
+                            <li>Két rugó között mindig köztes lemezeket kell beépíteni</li>
+                            <li>Minden rugócsere után ellenőrizze a légrést!</li>
+                        </ul>
+                    </div>
+
+                    <h1>6. HIBAELHÁRÍTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>6.1 Normális és Abnormális Hangok</h2>
+                        
+                        <div class="info-box">
+                            <h4>✓ NORMÁLIS MŰKÖDÉS:</h4>
+                            <ul>
+                                <li>Egyenletes zümmögés</li>
+                                <li>Enyhe mechanikus rezgés</li>
+                                <li>Minimális zaj</li>
+                            </ul>
+                        </div>
+
+                        <div class="danger-box">
+                            <h4>✗ HIBÁS MŰKÖDÉS - AZONNAL ÁLLÍTSA LE!:</h4>
+                            <ul>
+                                <li>Kemény, kopogó hangok → Légrés túl kicsi vagy ütközés</li>
+                                <li>Kalapáló zajok → Horgony ütközik a mágneshez</li>
+                                <li>Csörgő hangok → Laza csavar vagy alkatrész</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>6.2 Gyakori Problémák</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Probléma</th>
+                                    <th>Lehetséges Okok</th>
+                                    <th>Megoldás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nem mozog</td>
+                                    <td>Nincs áram, Vezérlő hiba, Légrés túl nagy</td>
+                                    <td>Ellenőrizze csatlakozást, Ellenőrizze vezérlőt, Állítsa be légrést</td>
+                                </tr>
+                                <tr>
+                                    <td>Lassan mozog</td>
+                                    <td>Rossz hangolás, Légrés túl nagy, Szennyezett tálca</td>
+                                    <td>Hangolás újraállítása, Légrés beállítása, Tisztítás</td>
+                                </tr>
+                                <tr>
+                                    <td>Erős alaprezgés</td>
+                                    <td>Laza csavarok, Kopott gumipufferek</td>
+                                    <td>Csavarok meghúzása, Pufferek cseréje</td>
+                                </tr>
+                                <tr>
+                                    <td>Kopogó hang</td>
+                                    <td>Légrés túl kicsi, Horgony ütközik</td>
+                                    <td>Légrés növelése, Beállítás ellenőrzése</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h1>7. KARBANTARTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>7.1 Napi Ellenőrzés</h2>
+                        <ul>
+                            <li>Vizuális ellenőrzés (repedések, sérülések)</li>
+                            <li>Hang figyelése (csak egyenletes zümmögés)</li>
+                            <li>Rezgés ellenőrzése</li>
+                            <li>Tisztaság ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>7.2 Havi Karbantartás</h2>
+                        <ul>
+                            <li>Csavarok szorításának ellenőrzése</li>
+                            <li>Rugók állapotának vizsgálata (repedések, deformáció)</li>
+                            <li>Légrés ellenőrzése mérőlapkával</li>
+                            <li>Gumipufferek ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>7.3 Éves Karbantartás</h2>
+                        <ul>
+                            <li>Teljes tisztítás</li>
+                            <li>Rugók alapos ellenőrzése és szükség esetén csere</li>
+                            <li>Légrés újramérése és beállítása</li>
+                            <li>Rezonancia újrahangolása</li>
+                            <li>Gumipufferek cseréje</li>
+                            <li>Elektromos csatlakozások ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>7.4 Rugócsere (2-5 évente)</h2>
+                        <p>⚠️ A rugók kopó alkatrészek! Élettartam: normál használat mellett 2-5 év.</p>
+                        <p><strong>Rugócsere jelei:</strong></p>
+                        <ul>
+                            <li>Látható repedések</li>
+                            <li>Törött rugó</li>
+                            <li>Erős deformáció</li>
+                            <li>Rozsdafoltok (oxidáció)</li>
+                            <li>Teljesítménycsökkenés</li>
+                        </ul>
+                    </div>
+
+                    <div class="danger-box">
+                        <h2>⚠️ KRITIKUS BIZTONSÁGI ELŐÍRÁS</h2>
+                        <p><strong>SOHA NE OLAJOZZA VAGY ZSÍROZZA A RUGÓKAT!</strong></p>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Műszaki Támogatás</h2>
+                        <p><strong>VIBROTEC AG</strong></p>
+                        <p>Benzstraße 13<br>
+                        71149 Bondorf, Németország</p>
+                        <p>Tel: +49 74 57 / 73 29 80<br>
+                        Fax: +49 74 57 / 73 29 81<br>
+                        E-mail: info@vibrotec-ag.de<br>
+                        Web: www.vibrotec-ag.de</p>
+                    </div>
+                </div>
+            `
+        },
+        'rna-srcn-series': {
+            title: 'RNA SRC-N Sorozat - Tálrezgők',
+            content: `
+                <div class="doc-content">
+                    <h1>RNA SRC-N SOROZAT ÁTTEKINTÉSE</h1>
+                    
+                    <div class="doc-section">
+                        <h2>1.1 Műszaki Adatok</h2>
+                        
+                        <h3>SRC-N 400-2</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Paraméter</th>
+                                    <th>Érték</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Méretek (Ø x H)</td>
+                                    <td>440 x 228 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Tömeg</td>
+                                    <td>103 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Teljesítményfelvétel</td>
+                                    <td>786 VA</td>
+                                </tr>
+                                <tr>
+                                    <td>Mágnes feszültség/frekvencia</td>
+                                    <td>220V / 50Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>Mágnesek száma</td>
+                                    <td>3 (WZAW 080 fekete)</td>
+                                </tr>
+                                <tr>
+                                    <td>Légrés</td>
+                                    <td>1.0 - 1.2 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Rezgési frekvencia</td>
+                                    <td>100 Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>Rugócsomagok</td>
+                                    <td>3 db (2x10, 1x9 rugó)</td>
+                                </tr>
+                                <tr>
+                                    <td>Max. rezgő tömeg</td>
+                                    <td>35 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Védelmi fokozat</td>
+                                    <td>IP 54</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>SRC-N 630-1</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Paraméter</th>
+                                    <th>Érték</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Méretek (Ø x H)</td>
+                                    <td>660 x 225 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Tömeg</td>
+                                    <td>168 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Teljesítményfelvétel</td>
+                                    <td>1000 VA</td>
+                                </tr>
+                                <tr>
+                                    <td>Mágnesek száma</td>
+                                    <td>4 (YZAW 080 piros)</td>
+                                </tr>
+                                <tr>
+                                    <td>Légrés</td>
+                                    <td>2.3 - 2.8 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Rezgési frekvencia</td>
+                                    <td>50 Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>Rugócsomagok</td>
+                                    <td>4 db (4x8 rugó)</td>
+                                </tr>
+                                <tr>
+                                    <td>Max. rezgő tömeg</td>
+                                    <td>50 kg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>SRC-N 800-1</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Paraméter</th>
+                                    <th>Érték</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Méretek (Ø x H)</td>
+                                    <td>805 x 315 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Tömeg</td>
+                                    <td>270 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Teljesítményfelvétel</td>
+                                    <td>1700 VA (8.5 A)</td>
+                                </tr>
+                                <tr>
+                                    <td>Mágnesek száma</td>
+                                    <td>4 (YZUW 090 piros)</td>
+                                </tr>
+                                <tr>
+                                    <td>Légrés</td>
+                                    <td>2.0 - 3.0 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Rezgési frekvencia</td>
+                                    <td>50 Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>Rugócsomagok</td>
+                                    <td>12 db (12x12 rugó)</td>
+                                </tr>
+                                <tr>
+                                    <td>Max. rezgő tömeg</td>
+                                    <td>80 kg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h1>2. BIZTONSÁGI ELŐÍRÁSOK</h1>
+
+                    <div class="danger-box">
+                        <h3>⚠️ VESZÉLY - Áramütés!</h3>
+                        <ul>
+                            <li>Minden elektromos munka előtt: ÁRAMTALANÍTÁS!</li>
+                            <li>Csak képzett villanyszerelő végezheti!</li>
+                            <li>Védőföldelés kötelező!</li>
+                        </ul>
+                    </div>
+
+                    <div class="warning-box">
+                        <h3>⚠️ Alapvető Biztonsági Követelmények</h3>
+                        <ul>
+                            <li>Soha ne működtesse védőburkolatok nélkül!</li>
+                            <li>Ne üzemeltesse robbanásveszélyes környezetben!</li>
+                            <li>Csak a gyártóval egyeztetett konfigurációban!</li>
+                            <li>Szigorúan tilos a biztonsági eszközök kikapcsolása!</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>2.1 Rendeltetésszerű Használat</h2>
+                        <ul>
+                            <li>Válogatórendszerek meghajtása</li>
+                            <li>Lineáris szállítás</li>
+                            <li>Ömlesztett áruk helyes orientációval történő szállítása és adagolása</li>
+                        </ul>
+                        <p><strong>⚠️ Minden más használat nem rendeltetésszerű!</strong></p>
+                    </div>
+
+                    <h1>3. SZÁLLÍTÁS ÉS TELEPÍTÉS</h1>
+
+                    <div class="doc-section">
+                        <h2>3.1 Szállítás</h2>
+                        <p>⚠️ FIGYELEM:</p>
+                        <ul>
+                            <li>Ne akassza vagy mozgassa az orientáló eszköznél fogva!</li>
+                            <li>Ügyeljen arra, hogy ne ütközzön más tárgyakkal!</li>
+                            <li>Mozgatás közben senki ne tartózkodjon a rezgőtányér alatt!</li>
+                            <li>Ellenőrizze az emelőberendezés teherbírását!</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.2 Telepítés</h2>
+                        <p>A rezgőtányért speciálisan tervezett RNA tartóra kell felszerelni.</p>
+                        <p><strong>Fontos:</strong> A tartót úgy kell méretezni, hogy a rezgőtányérből ne jussanak át rezgések.</p>
+                    </div>
+
+                    <h1>4. ÜZEMBE HELYEZÉS</h1>
+
+                    <div class="doc-section">
+                        <h2>4.1 Elektromos Csatlakoztatás</h2>
+                        <ol>
+                            <li>Csatlakoztassa a rezgőtányért a vezérlőhöz</li>
+                            <li>Csatlakoztassa a vezérlő hálózati csatlakozását</li>
+                            <li>Ellenőrizze a védőföldel's kötelező!</li>
+                        </ol>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>4.2 Első Bekapcsolás</h2>
+                        <p>⚠️ A rezgőtányér tálcájának üresnek kell lennie!</p>
+                        <ol>
+                            <li>Kapcsolja be a rezgőtányért a vezérlőn keresztül</li>
+                            <li>A vezérlő célérték potenciométerét 0%-ról 100%-ra fordítsa</li>
+                            <li>Többé-kevésbé hangos zümmögésen kívül semmilyen hangot nem szabad hallani</li>
+                        </ol>
+                        <p><strong>⚠️ Kemény, kopogó vagy kalapáló hangok mindig hibákat jeleznek!</strong></p>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>4.3 Működésellenőrzés</h2>
+                        <ol>
+                            <li>Állítsa a vezérlő célérték potenciométerét kb. 50%-ra</li>
+                            <li>Töltse fel a tálcát maximum 1/3 magasságig alkatrészekkel</li>
+                            <li>A gyárban a rezgőtányérokat 50-80%-os beállításnál hangolják</li>
+                        </ol>
+                        <p><strong>⚠️ Üzem közben ne fordítsa fel a potenciométert a szükségesnél jobban!</strong></p>
+                    </div>
+
+                    <h1>5. KARBANTARTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>5.1 Napi Ellenőrzés</h2>
+                        <ul>
+                            <li>Vizuális ellenőrzés (repedések, sérülések, szennyeződés)</li>
+                            <li>Hang figyelése (egyenletes zümmögés)</li>
+                            <li>Rezgés megfigyelése (egyenletes működés)</li>
+                            <li>Védőburkolatok épségének ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>5.2 Heti Ellenőrzés</h2>
+                        <ul>
+                            <li>Csavarok szorításának ellenőrzése</li>
+                            <li>Elektromos csatlakozások vizsgálata</li>
+                            <li>Tálca tisztaságának ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>5.3 Havi Karbantartás</h2>
+                        <ul>
+                            <li>Rugók állapotának vizsgálata (repedések, deformáció)</li>
+                            <li>Légrés ellenőrzése mérőlapkával</li>
+                            <li>Lengéscsillapítók ellenőrzése</li>
+                            <li>Védőburkolatok rögzítésének ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>5.4 Éves Karbantartás</h2>
+                        <ul>
+                            <li>Teljes tisztítás</li>
+                            <li>Rugók alapos ellenőrzése és szükség esetén csere</li>
+                            <li>Légrés újramérése és beállítása</li>
+                            <li>Elektromos rendszer átfogó ellenőrzése</li>
+                            <li>Lengéscsillapítók cseréje szükség esetén</li>
+                            <li>Teljesítményteszt elvégzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="danger-box">
+                        <h2>⚠️ KRITIKUS BIZTONSÁGI ELŐÍRÁS</h2>
+                        <p><strong>SOHA NE OLAJOZZA VAGY ZSÍROZZA A RUGÓKAT!</strong></p>
+                    </div>
+
+                    <h1>6. HIBAELHÁRÍTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>6.1 Gyakori Problémák és Megoldások</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Probléma</th>
+                                    <th>Lehetséges Okok</th>
+                                    <th>Megoldás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nem mozog</td>
+                                    <td>Nincs áramellátás, Vezérlő hiba, Légrés túl nagy</td>
+                                    <td>Ellenőrizze csatlakozást, Ellenőrizze vezérlőt, Állítsa be a légrést</td>
+                                </tr>
+                                <tr>
+                                    <td>Gyenge szállítás</td>
+                                    <td>Rossz hangolás, Túlterhelés, Légrés nem megfelelő</td>
+                                    <td>Hangolás ellenőrzése, Terhelés csökkentése, Légrés beállítása</td>
+                                </tr>
+                                <tr>
+                                    <td>Kopogó hang</td>
+                                    <td>Légrés túl kicsi, Horgony ütközik</td>
+                                    <td>Légrés növelése, Szakszerű beállítás</td>
+                                </tr>
+                                <tr>
+                                    <td>Erős alaprezgés</td>
+                                    <td>Laza csavarok, Kopott lengéscsillapítók</td>
+                                    <td>Csavarok meghúzása, Csillapítók cseréje</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>6.2 Normális és Abnormális Hangok</h2>
+                        
+                        <div class="info-box">
+                            <h4>✓ NORMÁLIS MŰKÖDÉS:</h4>
+                            <ul>
+                                <li>Egyenletes zümmögés (50 vagy 100 Hz)</li>
+                                <li>A hangosság a vezérlő beállításától függ</li>
+                                <li>Enyhe mechanikai rezgés</li>
+                            </ul>
+                        </div>
+
+                        <div class="danger-box">
+                            <h4>✗ HIBÁS MŰKÖDÉS - AZONNAL ÁLLÍTSA LE:</h4>
+                            <ul>
+                                <li>Kopogás, csattogás → Légrés probléma vagy ütközés</li>
+                                <li>Kalapálás → Horgony ütközik a mágneshez</li>
+                                <li>Csörgés → Laza csavar vagy alkatrész</li>
+                                <li>Recsegés → Rugó probléma</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Műszaki Támogatás</h2>
+                        <p><strong>RNA Group - Központ</strong></p>
+                        <p>Rhein-Nadel Automation GmbH<br>
+                        Reichsweg 19-23<br>
+                        D-52068 Aachen, Németország</p>
+                        <p>Tel: +49 (0) 241-5109-0<br>
+                        Fax: +49 (0) 241-5109-219<br>
+                        E-mail: vertrieb@RNA.de<br>
+                        Web: www.RNA.de</p>
+                    </div>
+
+                    <div class="warning-box">
+                        <h2>Fontos Megjegyzések</h2>
+                        <ul>
+                            <li>A rezgőtányér csak rendeltetésszerű használatra alkalmas</li>
+                            <li>Minden munkát csak képzett szakember végezhet</li>
+                            <li>A biztonsági előírásokat mindig tartsa be</li>
+                            <li>Védőburkolatok nélkül ne működtesse a berendezést</li>
+                            <li>Rendszeres karbantartással meghosszabbítható az élettartam</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        },
+        'rna-srhl-series': {
+            title: 'RNA SRHL Sorozat - Tálrezgők',
+            content: `
+                <div class="doc-content">
+                    <h1>RNA SRHL 400-1 ÁTTEKINTÉSE</h1>
+                    
+                    <div class="doc-section">
+                        <h2>1.1 Műszaki Adatok</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Paraméter</th>
+                                    <th>Érték</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Méretek (Ø x H)</td>
+                                    <td>470 x 249 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Tömeg</td>
+                                    <td>140 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Teljesítményfelvétel</td>
+                                    <td>1140 VA (5.7 A)</td>
+                                </tr>
+                                <tr>
+                                    <td>Mágnes feszültség/frekvencia</td>
+                                    <td>220V / 50Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>Mágnesek száma</td>
+                                    <td>2 (YZUW 090 piros)</td>
+                                </tr>
+                                <tr>
+                                    <td>Légrés</td>
+                                    <td>2.0 - 2.8 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Rezgési frekvencia</td>
+                                    <td>50 Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>Rugócsomagok száma</td>
+                                    <td>6 db</td>
+                                </tr>
+                                <tr>
+                                    <td>Rugók száma csomagokban</td>
+                                    <td>4x4, 2x3</td>
+                                </tr>
+                                <tr>
+                                    <td>Rugó méretek (L x W)</td>
+                                    <td>139 (116) x 40 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Rugó vastagság</td>
+                                    <td>2 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Csavar húzónyomaték</td>
+                                    <td>120 Nm</td>
+                                </tr>
+                                <tr>
+                                    <td>Max. rezgő tömeg</td>
+                                    <td>45 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Védelmi fokozat</td>
+                                    <td>IP 54</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>1.2 Jellemzők</h2>
+                        <ul>
+                            <li>Nagy teljesítményű tálrezgő</li>
+                            <li>Két YZUW 090 típusú mágnes</li>
+                            <li>Hat rugócsomag az optimális teljesítményért</li>
+                            <li>50 Hz üzemi frekvencia</li>
+                            <li>IP 54 védelmi fokozat</li>
+                        </ul>
+                    </div>
+
+                    <h1>2. BIZTONSÁGI ELŐÍRÁSOK</h1>
+
+                    <div class="danger-box">
+                        <h3>⚠️ VESZÉLY - Áramütés!</h3>
+                        <ul>
+                            <li>Minden elektromos munka előtt: ÁRAMTALANÍTÁS!</li>
+                            <li>Csak képzett villanyszerelő végezheti!</li>
+                            <li>Védőföldelés kötelező!</li>
+                        </ul>
+                    </div>
+
+                    <div class="warning-box">
+                        <h3>⚠️ Alapvető Biztonsági Követelmények</h3>
+                        <ul>
+                            <li>Győződjön meg róla, hogy a tápellátás védőföldjelése kifogástalan!</li>
+                            <li>Soha ne működtesse a rezgőtányért védőburkolatok nélkül!</li>
+                            <li>Ne működtesse robbanásveszélyes vagy nedves környezetben!</li>
+                            <li>Csak a gyártóval egyeztetett konfigurációban használja!</li>
+                        </ul>
+                    </div>
+
+                    <h1>3. TELEPÍTÉS ÉS ÜZEMBE HELYEZÉS</h1>
+
+                    <div class="doc-section">
+                        <h2>3.1 Szállítás</h2>
+                        <p>A rezgőtányérok stabil fa ládákban érkeznek.</p>
+                        <p><strong>⚠️ FIGYELEM:</strong></p>
+                        <ul>
+                            <li>Ne akassza vagy mozgassa a rezgőtányért az orientáló eszköznél fogva!</li>
+                            <li>Ügyeljen arra, hogy mozgatás közben ne ütközzön más tárgyakkal!</li>
+                            <li>Mozgatás közben senki ne tartózkodjon a rezgőtányér alatt!</li>
+                            <li>Mozgatás előtt ellenőrizze az emelőberendezés megfelelő teherbírását!</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.2 Telepítés</h2>
+                        <p>A telepítési helyen a rezgőtányért a speciálisan tervezett RNA tartóra kell felszerelni.</p>
+                        <p><strong>Más tartók használata esetén:</strong></p>
+                        <ul>
+                            <li>Győződjön meg azok megfelelő teherbírásáról!</li>
+                            <li>A tartót úgy kell méretezni, hogy a rezgőtányérből ne jussanak át rezgések</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.3 Elektromos Csatlakoztatás</h2>
+                        <ol>
+                            <li>Csatlakoztassa a rezgőtányért közvetlenül vagy csatlakozón keresztül a vezérlőhöz</li>
+                            <li>Létrehozza a vezérlő hálózati csatlakozását</li>
+                            <li>Ellenőrizze a védőföldlést</li>
+                        </ol>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.4 Első Bekapcsolás</h2>
+                        <p><strong>⚠️ A rezgőtányér tálcájának üresnek kell lennie!</strong></p>
+                        <ol>
+                            <li>Kapcsolja be a rezgőtányért a vezérlőn keresztül</li>
+                            <li>A vezérlő célérték potenciométerét 0%-ról 100%-ra fordítsa</li>
+                            <li>A potenciométer állásától függően többé-kevésbé hangos zümmögésen kívül semmilyen hangot nem szabad hallani</li>
+                        </ol>
+                        <p><strong>⚠️ Kemény, kopogó vagy kalapáló hangok mindig hibákat jeleznek, amelyeket el kell hárítani!</strong></p>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.5 Működésellenőrzés</h2>
+                        <ol>
+                            <li>Állítsa a vezérlő célérték potenciométerét kb. 50%-ra</li>
+                            <li>Töltse fel a tálcát maximum 1/3 magasságig alkatrészekkel</li>
+                            <li>A gyárban a rezgőtányérokat az átvételkor úgy hangolják be, hogy célérték potenciométer 50-80%-os beállításánál érjék el a megígért szállítási teljesítményt</li>
+                        </ol>
+                        <p><strong>⚠️ Üzem közben ne fordítsa fel a célérték potenciométert a feltétlenül szükségesnél jobban!</strong></p>
+                    </div>
+
+                    <h1>4. KARBANTARTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>4.1 Napi Ellenőrzés</h2>
+                        <ul>
+                            <li>Vizuális ellenőrzés (repedések, sérülések, szennyeződés)</li>
+                            <li>Hang figyelése (egyenletes zümmögés)</li>
+                            <li>Rezgés megfigyelése (egyenletes működés)</li>
+                            <li>Védőburkolatok épségének ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>4.2 Heti Ellenőrzés</h2>
+                        <ul>
+                            <li>Csavarok szorításának ellenőrzése (120 Nm)</li>
+                            <li>Elektromos csatlakozások vizsgálata</li>
+                            <li>Tálca tisztaságának ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>4.3 Havi Karbantartás</h2>
+                        <ul>
+                            <li>Rugók állapotának vizsgálata (repedések, deformáció)</li>
+                            <li>Légrés ellenőrzése mérőlapkával (2.0 - 2.8 mm)</li>
+                            <li>Lengéscsillapítók ellenőrzése</li>
+                            <li>Védőburkolatok rögzítésének ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>4.4 Éves Karbantartás</h2>
+                        <ul>
+                            <li>Teljes tisztítás</li>
+                            <li>Rugók alapos ellenőrzése és szükség esetén csere</li>
+                            <li>Légrés újramérése és beállítása</li>
+                            <li>Elektromos rendszer átfogó ellenőrzése</li>
+                            <li>Lengéscsillapítók cseréje szükség esetén</li>
+                            <li>Teljesítményteszt elvégzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="danger-box">
+                        <h2>⚠️ KRITIKUS BIZTONSÁGI ELŐÍRÁS</h2>
+                        <p><strong>SOHA NE OLAJOZZA VAGY ZSÍROZZA A RUGÓKAT!</strong></p>
+                    </div>
+
+                    <h1>5. HIBAELHÁRÍTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>5.1 Gyakori Problémák és Megoldások</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Probléma</th>
+                                    <th>Lehetséges Okok</th>
+                                    <th>Megoldás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nem mozog</td>
+                                    <td>Nincs áramellátás, Vezérlő hiba, Légrés túl nagy</td>
+                                    <td>Ellenőrizze csatlakozást, Ellenőrizze vezérlőt, Állítsa be a légrést</td>
+                                </tr>
+                                <tr>
+                                    <td>Gyenge szállítás</td>
+                                    <td>Rossz hangolás, Túlterhelés, Légrés nem megfelelő</td>
+                                    <td>Hangolás ellenőrzése, Terhelés csökkentése, Légrés beállítása</td>
+                                </tr>
+                                <tr>
+                                    <td>Kopogó hang</td>
+                                    <td>Légrés túl kicsi, Horgony ütközik</td>
+                                    <td>Légrés növelése, Szakszerű beállítás</td>
+                                </tr>
+                                <tr>
+                                    <td>Erős alaprezgés</td>
+                                    <td>Laza csavarok, Kopott lengéscsillapítók</td>
+                                    <td>Csavarok meghúzása, Csillapítók cseréje</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>5.2 Normális és Abnormális Hangok</h2>
+                        
+                        <div class="info-box">
+                            <h4>✓ NORMÁLIS MŰKÖDÉS:</h4>
+                            <ul>
+                                <li>Egyenletes zümmögés (50 Hz)</li>
+                                <li>A hangosság a vezérlő beállításától függ</li>
+                                <li>Enyhe mechanikai rezgés</li>
+                            </ul>
+                        </div>
+
+                        <div class="danger-box">
+                            <h4>✗ HIBÁS MŰKÖDÉS - AZONNAL ÁLLÍTSA LE:</h4>
+                            <ul>
+                                <li>Kopogás, csattogás → Légrés probléma vagy ütközés</li>
+                                <li>Kalapálás → Horgony ütközik a mágneshez</li>
+                                <li>Csörgés → Laza csavar vagy alkatrész</li>
+                                <li>Recsegés → Rugó probléma</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Műszaki Támogatás</h2>
+                        <p><strong>RNA Group - Központ</strong></p>
+                        <p>Rhein-Nadel Automation GmbH<br>
+                        Reichsweg 19-23<br>
+                        D-52068 Aachen, Németország</p>
+                        <p>Tel: +49 (0) 241-5109-0<br>
+                        Fax: +49 (0) 241-5109-219<br>
+                        E-mail: vertrieb@RNA.de<br>
+                        Web: www.RNA.de</p>
+                    </div>
+
+                    <div class="warning-box">
+                        <h2>Fontos Megjegyzések</h2>
+                        <ul>
+                            <li>A rezgőtányér csak rendeltetésszerű használatra alkalmas</li>
+                            <li>Minden munkát csak képzett szakember végezhet</li>
+                            <li>A biztonsági előírásokat mindig tartsa be</li>
+                            <li>Védőburkolatok nélkül ne működtesse a berendezést</li>
+                            <li>Rendszeres karbantartással meghosszabbítható az élettartam</li>
+                            <li>A rugókat SOHA ne olajozza vagy zsírozza</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        },
+        'wfl-series': {
+            title: 'WFL Sorozat - Tálrezgők (VIBROTEC AG)',
+            content: `
+                <div class="doc-content">
+                    <h1>1. WFL SOROZAT ÁTTEKINTÉSE</h1>
+                    
+                    <div class="doc-section">
+                        <h2>1.1 Modellek és Műszaki Adatok</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Modell</th>
+                                    <th>Átmérő</th>
+                                    <th>Tömeg</th>
+                                    <th>Légrés</th>
+                                    <th>Alaplemez min.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>WFL 150</td>
+                                    <td>440 mm</td>
+                                    <td>30-40 kg</td>
+                                    <td>0.4 mm</td>
+                                    <td>10 mm acél</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 200</td>
+                                    <td>470-500 mm</td>
+                                    <td>-</td>
+                                    <td>0.5 mm</td>
+                                    <td>10 mm acél</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 300</td>
+                                    <td>~600 mm</td>
+                                    <td>-</td>
+                                    <td>0.6 mm</td>
+                                    <td>15 mm acél</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 450</td>
+                                    <td>~800 mm</td>
+                                    <td>-</td>
+                                    <td>1.2 mm</td>
+                                    <td>15 mm acél</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>1.2 Általános Jellemzők</h2>
+                        <ul>
+                            <li>Elektromágneses rezgőtányér meghajtás</li>
+                            <li>230V / 50Hz tápfeszültség</li>
+                            <li>Rugó-tömeg rendszer hangolással</li>
+                            <li>Gumipuffereken keresztül rögzítés</li>
+                            <li>Egyenletes zümmögés üzem közben</li>
+                            <li>Védőföldelés kötelező</li>
+                        </ul>
+                    </div>
+
+                    <h1>2. TELEPÍTÉS ÉS SZERELÉS</h1>
+
+                    <div class="danger-box">
+                        <h3>⚠️ VESZÉLY - Áramütés!</h3>
+                        <ul>
+                            <li>Minden elektromos munka előtt: ÁRAMTALANÍTÁS</li>
+                            <li>Csak képzett villanyszerelő végezheti</li>
+                            <li>Védőföldelés kötelező</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>2.1 Mechanikai Rögzítés</h2>
+                        <p><strong>A rezgőtányért rezgésstabil helyre kell telepíteni:</strong></p>
+                        <ul>
+                            <li>Acél alaplap használata (10-15 mm vastagság)</li>
+                            <li>Az alaplapot rezgésmentesen rögzíteni az aljzathoz</li>
+                            <li>A rezgőtányér négy gumipufferen keresztül rögzül</li>
+                            <li>Szomszédos géprészek NE érintkezzenek a rezgőtányérral</li>
+                        </ul>
+                        
+                        <p><strong>FONTOS:</strong> Ha lehetséges, ne változtassa meg a gyári beállításokat!</p>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>2.2 Elektromos Csatlakoztatás</h2>
+                        <ol>
+                            <li>Csatlakoztassa a rezgőtányért a vezérlőhöz (közvetlenül vagy csatlakozón keresztül)</li>
+                            <li>Csatlakoztassa a vezérlőt a hálózathoz (230V/50Hz)</li>
+                            <li>Ellenőrizze a földelést</li>
+                            <li>Csak megfelelő VIBROTEC vagy kompatibilis vezérlő használható</li>
+                        </ol>
+                    </div>
+
+                    <h1>3. ÜZEMBE HELYEZÉS</h1>
+
+                    <div class="warning-box">
+                        <h3>⚠️ Első Bekapcsolás</h3>
+                        <p><strong>A tálca legyen ÜRES az első bekapcsoláskor!</strong></p>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.1 Bekapcsolási Folyamat</h2>
+                        <ol>
+                            <li>Csatlakoztassa a vezérlőt a hálózathoz</li>
+                            <li>Kapcsolja be a vezérlőt</li>
+                            <li>Állítsa a vezérlő teljesítményét 0%-ról fokozatosan 100%-ra</li>
+                            <li>Egyenletes zümmögésnek kell hallhatónak lennie</li>
+                            <li><strong>Kemény, kopogó vagy kalapáló hangok hibát jeleznek - azonnal állítsa le!</strong></li>
+                        </ol>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.2 Működés Ellenőrzése</h2>
+                        <ol>
+                            <li>Állítsa a vezérlőt kb. 50%-ra</li>
+                            <li>Töltse fel a tálcát maximum 1/3 magasságig alkatrészekkel</li>
+                            <li>Szükség esetén növelje a teljesítményt</li>
+                            <li>A gyári beállítások szerint 50-80% vezérlő pozícióban kell elérni a kívánt teljesítményt</li>
+                        </ol>
+                        
+                        <p><strong>FONTOS:</strong> Üzem közben ne tekerje fel a vezérlőt a szükségesnél jobban!</p>
+                    </div>
+
+                    <h1>4. BEÁLLÍTÁSOK ÉS HANGOLÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>4.1 Légrés Ellenőrzése és Beállítása</h2>
+                        <p><strong>⚠️ KRITIKUS PARAMÉTER!</strong></p>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Modell</th>
+                                    <th>Légrés</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>WFL 150</td>
+                                    <td>0.4 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 200</td>
+                                    <td>0.5 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 300</td>
+                                    <td>0.6 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>WFL 450</td>
+                                    <td>1.2 mm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>4.2 Rugóállandó Megváltoztatása</h2>
+                        <p><strong>⚠️ FIGYELEM: Ez a művelet speciális szakértelmet igényel!</strong></p>
+                        
+                        <h3>Folyamat:</h3>
+                        <ol>
+                            <li>Kapcsolja be a rezgőtányért és állítson be lassú szállítási sebességet</li>
+                            <li>Óvatosan oldja meg egy tetszőleges rugócsomag alsó rögzítőcsavarját</li>
+                            <li>Figyelje a szállítási sebesség változását:
+                                <ul>
+                                    <li><strong>Ha a sebesség NŐ →</strong> el kell távolítani egy rugót</li>
+                                    <li><strong>Ha a sebesség CSÖKKEN →</strong> hozzá kell adni egy rugót</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        
+                        <h3>Fontos Szabályok:</h3>
+                        <ul>
+                            <li>Az egyes rugócsomagoknak lehetőleg azonos számú rugót kell tartalmazniuk</li>
+                            <li>Két rugó között mindig köztes lemezeket kell beépíteni</li>
+                            <li>A rugócsomag belső oldalain fent és lent rugóblokk szükséges</li>
+                            <li>Minden rugócsere után ellenőrizni kell a légrést!</li>
+                        </ul>
+                    </div>
+
+                    <h1>5. HIBAELHÁRÍTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>5.1 Normális vs Hibás Működés</h2>
+                        
+                        <h3>✓ NORMÁLIS MŰKÖDÉS:</h3>
+                        <ul>
+                            <li>Egyenletes zümmögés (potenciométer állástól függően halkabb vagy hangosabb)</li>
+                            <li>Enyhe mechanikus rezgés</li>
+                            <li>Minimális zaj</li>
+                        </ul>
+                        
+                        <h3>✗ HIBÁS MŰKÖDÉS - AZONNAL ÁLLÍTSA LE:</h3>
+                        <ul>
+                            <li><strong>Kemény, kopogó hangok →</strong> Légrés túl kicsi vagy ütközés</li>
+                            <li><strong>Kalapáló zajok →</strong> Horgony ütközik a mágneshez</li>
+                            <li><strong>Csörgő hangok →</strong> Laza csavar vagy alkatrész</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>5.2 Gyakori Problémák és Megoldások</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Probléma</th>
+                                    <th>Lehetséges ok</th>
+                                    <th>Megoldás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nem mozog</td>
+                                    <td>Nincs áram / Vezérlő hiba / Légrés túl nagy</td>
+                                    <td>Ellenőrizze csatlakozást / Ellenőrizze vezérlőt / Állítsa be légrést</td>
+                                </tr>
+                                <tr>
+                                    <td>Lassan mozog</td>
+                                    <td>Rossz hangolás / Légrés túl nagy / Szennyezett tálca</td>
+                                    <td>Hangolás újraállítása / Légrés beállítása / Tisztítás</td>
+                                </tr>
+                                <tr>
+                                    <td>Erős alaprezgés</td>
+                                    <td>Laza csavarok / Kopott gumipufferek</td>
+                                    <td>Csavarok meghúzása / Pufferek cseréje</td>
+                                </tr>
+                                <tr>
+                                    <td>Kopogó hang</td>
+                                    <td>Légrés túl kicsi / Horgony ütközik</td>
+                                    <td>Légrés növelése / Beállítás ellenőrzése</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h1>6. KARBANTARTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>6.1 Napi Ellenőrzés</h2>
+                        <ul>
+                            <li>Vizuális ellenőrzés (repedések, sérülések)</li>
+                            <li>Hang figyelése (csak egyenletes zümmögés)</li>
+                            <li>Rezgés ellenőrzése (egyenletes működés)</li>
+                            <li>Tisztaság ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>6.2 Havi Karbantartás</h2>
+                        <ul>
+                            <li>Csavarok szorításának ellenőrzése</li>
+                            <li>Rugók állapotának vizsgálata (repedések, deformáció)</li>
+                            <li>Légrés ellenőrzése mérőlapkával</li>
+                            <li>Gumipufferek ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>6.3 Éves Karbantartás</h2>
+                        <ul>
+                            <li>Teljes tisztítás</li>
+                            <li>Rugók alapos ellenőrzése és szükség esetén csere</li>
+                            <li>Légrés újramérése és beállítása</li>
+                            <li>Rezonancia újrahangolása</li>
+                            <li>Gumipufferek cseréje</li>
+                            <li>Elektromos csatlakozások ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="danger-box">
+                        <h2>⚠️ KRITIKUS BIZTONSÁGI ELŐÍRÁS</h2>
+                        <p><strong>SOHA NE OLAJOZZA VAGY ZSÍROZZA A RUGÓKAT!</strong></p>
+                        <p>A rugók kopó alkatrészek! Élettartam: normál használat mellett 2-5 év.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Műszaki Támogatás</h2>
+                        <p><strong>VIBROTEC AG</strong></p>
+                        <p>Benzstraße 13<br>
+                        71149 Bondorf, Németország</p>
+                        <p><strong>Tel:</strong> +49 74 57 / 73 29 80<br>
+                        <strong>Fax:</strong> +49 74 57 / 73 29 81<br>
+                        <strong>E-mail:</strong> info@vibrotec-ag.de<br>
+                        <strong>Web:</strong> www.vibrotec-ag.de</p>
+                    </div>
+                </div>
+            `
+        },
+        'rna-srcn-series': {
+            title: 'RNA SRC-N Sorozat - Rezgőtányérok',
+            content: `
+                <div class="doc-content">
+                    <h1>1. RNA SRC-N SOROZAT ÁTTEKINTÉSE</h1>
+                    
+                    <div class="doc-section">
+                        <h2>1.1 Modellek és Műszaki Adatok</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Modell</th>
+                                    <th>Átmérő x Magasság</th>
+                                    <th>Tömeg</th>
+                                    <th>Légrés</th>
+                                    <th>Frekvencia</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SRC-N 400-2</td>
+                                    <td>440 x 228 mm</td>
+                                    <td>103 kg</td>
+                                    <td>1.0-1.2 mm</td>
+                                    <td>100 Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>SRC-N 630-1</td>
+                                    <td>660 x 225 mm</td>
+                                    <td>168 kg</td>
+                                    <td>2.3-2.8 mm</td>
+                                    <td>50 Hz</td>
+                                </tr>
+                                <tr>
+                                    <td>SRC-N 800-1</td>
+                                    <td>805 x 315 mm</td>
+                                    <td>270 kg</td>
+                                    <td>2.0-3.0 mm</td>
+                                    <td>50 Hz</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>1.2 SRC-N 400-2 Részletes Adatok</h2>
+                        <ul>
+                            <li><strong>Teljesítményfelvétel:</strong> 786 VA</li>
+                            <li><strong>Áramfelvétel:</strong> 4.05 A</li>
+                            <li><strong>Mágnes feszültség/frekvencia:</strong> 220V / 50Hz</li>
+                            <li><strong>Mágnesek száma:</strong> 3 db (WZAW 080 típus)</li>
+                            <li><strong>Rugócsomagok:</strong> 3 db (2x10, 1x9 rugó)</li>
+                            <li><strong>Rugó méretek:</strong> 106 (86) x 35 mm, 2 mm vastagság</li>
+                            <li><strong>Csavar húzónyomaték:</strong> 100 Nm</li>
+                            <li><strong>Max. rezgő tömeg:</strong> 35 kg</li>
+                            <li><strong>Védelmi fokozat:</strong> IP 54</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>1.3 SRC-N 630-1 Részletes Adatok</h2>
+                        <ul>
+                            <li><strong>Teljesítményfelvétel:</strong> 1000 VA</li>
+                            <li><strong>Mágnesek száma:</strong> 4 db (YZAW 080 típus)</li>
+                            <li><strong>Rugócsomagok:</strong> 4 db (4x8 rugó)</li>
+                            <li><strong>Max. rezgő tömeg:</strong> 50 kg</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>1.4 SRC-N 800-1 Részletes Adatok</h2>
+                        <ul>
+                            <li><strong>Teljesítményfelvétel:</strong> 1700 VA</li>
+                            <li><strong>Áramfelvétel:</strong> 8.5 A</li>
+                            <li><strong>Mágnesek száma:</strong> 4 db (YZUW 090 típus)</li>
+                            <li><strong>Rugócsomagok:</strong> 12 db (12x12 rugó)</li>
+                            <li><strong>Rugó méretek:</strong> 180 (156) x 60 (30) mm</li>
+                            <li><strong>Csavar húzónyomaték:</strong> 145 Nm</li>
+                            <li><strong>Max. rezgő tömeg:</strong> 80 kg</li>
+                            <li><strong>Kábelhossz:</strong> 1.4 m</li>
+                        </ul>
+                    </div>
+
+                    <h1>2. BIZTONSÁGI ELŐÍRÁSOK</h1>
+
+                    <div class="danger-box">
+                        <h3>⚠️ VESZÉLY - Áramütés!</h3>
+                        <ul>
+                            <li>Minden elektromos munka előtt: ÁRAMTALANÍTÁS!</li>
+                            <li>Csak képzett villanyszerelő végezheti!</li>
+                            <li>Védőföldelés kötelező!</li>
+                        </ul>
+                    </div>
+
+                    <div class="warning-box">
+                        <h3>⚠️ Alapvető Biztonsági Követelmények</h3>
+                        <ul>
+                            <li>Győződjön meg róla, hogy a tápellátás védőföldjelése kifogástalan állapotban van</li>
+                            <li>Soha ne működtesse a rezgőtányért védőburkolatok és fedőlapok nélkül</li>
+                            <li>Ne működtesse robbanásveszélyes vagy nedves környezetben</li>
+                            <li>Csak a gyártóval egyeztetett konfigurációban használja</li>
+                        </ul>
+                    </div>
+
+                    <h1>3. SZÁLLÍTÁS ÉS TELEPÍTÉS</h1>
+
+                    <div class="doc-section">
+                        <h2>3.1 Szállítás</h2>
+                        <p><strong>⚠️ FIGYELEM:</strong></p>
+                        <ul>
+                            <li>Ne akassza vagy mozgassa a rezgőtányért az orientáló eszköznél fogva!</li>
+                            <li>Ügyeljen arra, hogy mozgatás közben ne ütközzön más tárgyakkal!</li>
+                            <li>Mozgatás közben senki ne tartózkodjon a rezgőtányér alatt!</li>
+                            <li>Mozgatás előtt ellenőrizze az emelőberendezés megfelelő teherbírását!</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.2 Telepítés</h2>
+                        <p>A telepítési helyen a rezgőtányért a speciálisan tervezett RNA tartóra kell felszerelni.</p>
+                        <p>A tartót úgy kell méretezni, hogy a rezgőtányérből ne jussanak át rezgések.</p>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.3 Elektromos Csatlakoztatás</h2>
+                        <ol>
+                            <li>Csatlakoztassa a rezgőtányért közvetlenül vagy csatlakozón keresztül a vezérlőhöz</li>
+                            <li>Csatlakoztassa a vezérlő hálózati csatlakozását</li>
+                            <li>Ellenőrizze a földelést</li>
+                        </ol>
+                    </div>
+
+                    <h1>4. ÜZEMBE HELYEZÉS</h1>
+
+                    <div class="warning-box">
+                        <h3>⚠️ A rezgőtányér tálcájának üresnek kell lennie!</h3>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>4.1 Első Bekapcsolás</h2>
+                        <ol>
+                            <li>Kapcsolja be a rezgőtányért a vezérlőn keresztül</li>
+                            <li>A vezérlő célérték potenciométerét 0%-ról 100%-ra fordítsa</li>
+                            <li>A potenciométer állásától függően többé-kevésbé hangos zümmögésen kívül semmilyen hangot nem szabad hallani</li>
+                        </ol>
+                        
+                        <p><strong>⚠️ Kemény, kopogó vagy kalapáló hangok mindig hibákat jeleznek, amelyeket el kell hárítani!</strong></p>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>4.2 Működésellenőrzés</h2>
+                        <ol>
+                            <li>Állítsa a vezérlő célérték potenciométerét kb. 50%-ra</li>
+                            <li>Töltse fel a tálcát maximum 1/3 magasságig alkatrészekkel</li>
+                            <li>A gyárban a rezgőtányérokat úgy hangolják be, hogy célérték potenciométer 50-80%-os beállításánál érjék el a megígért szállítási teljesítményt</li>
+                        </ol>
+                        
+                        <p><strong>⚠️ Üzem közben ne fordítsa fel a célérték potenciométert a feltétlenül szükségesnél jobban!</strong></p>
+                    </div>
+
+                    <h1>5. KARBANTARTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>5.1 Napi Ellenőrzés</h2>
+                        <ul>
+                            <li>Vizuális ellenőrzés (repedések, sérülések, szennyeződés)</li>
+                            <li>Hang figyelése (egyenletes zümmögés)</li>
+                            <li>Rezgés megfigyelése (egyenletes működés)</li>
+                            <li>Védőburkolatok épségének ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>5.2 Heti Ellenőrzés</h2>
+                        <ul>
+                            <li>Csavarok szorításának ellenőrzése</li>
+                            <li>Elektromos csatlakozások vizsgálata</li>
+                            <li>Tálca tisztaságának ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>5.3 Havi Karbantartás</h2>
+                        <ul>
+                            <li>Rugók állapotának vizsgálata (repedések, deformáció)</li>
+                            <li>Légrés ellenőrzése mérőlapkával</li>
+                            <li>Lengéscsillapítók ellenőrzése</li>
+                            <li>Védőburkolatok rögzítésének ellenőrzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>5.4 Éves Karbantartás</h2>
+                        <ul>
+                            <li>Teljes tisztítás</li>
+                            <li>Rugók alapos ellenőrzése és szükség esetén csere</li>
+                            <li>Légrés újramérése és beállítása</li>
+                            <li>Elektromos rendszer átfogó ellenőrzése</li>
+                            <li>Lengéscsillapítók cseréje szükség esetén</li>
+                            <li>Teljesítményteszt elvégzése</li>
+                        </ul>
+                    </div>
+
+                    <div class="danger-box">
+                        <h2>⚠️ KRITIKUS BIZTONSÁGI ELŐÍRÁS</h2>
+                        <p><strong>SOHA NE OLAJOZZA VAGY ZSÍROZZA A RUGÓKAT!</strong></p>
+                    </div>
+
+                    <h1>6. HIBAELHÁRÍTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>6.1 Gyakori Problémák és Megoldások</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Probléma</th>
+                                    <th>Lehetséges okok</th>
+                                    <th>Megoldás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>NEM MOZOG</td>
+                                    <td>Nincs áramellátás / Vezérlő hiba / Légrés túl nagy</td>
+                                    <td>Ellenőrizze csatlakozást / Ellenőrizze vezérlőt / Állítsa be a légrést</td>
+                                </tr>
+                                <tr>
+                                    <td>GYENGE SZÁLLÍTÁS</td>
+                                    <td>Rossz hangolás / Túlterhelés / Légrés nem megfelelő</td>
+                                    <td>Hangolás ellenőrzése / Terhelés csökkentése / Légrés beállítása</td>
+                                </tr>
+                                <tr>
+                                    <td>KOPOGÓ HANG</td>
+                                    <td>Légrés túl kicsi / Horgony ütközik</td>
+                                    <td>Légrés növelése / Szakszerű beállítás</td>
+                                </tr>
+                                <tr>
+                                    <td>ERŐS ALAPREZGÉS</td>
+                                    <td>Laza csavarok / Kopott lengéscsillapítók</td>
+                                    <td>Csavarok meghúzása / Csillapítók cseréje</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>6.2 Normális és Abnormális Hangok</h2>
+                        
+                        <h3>✓ NORMÁLIS MŰKÖDÉS:</h3>
+                        <ul>
+                            <li>Egyenletes zümmögés (50 vagy 100 Hz)</li>
+                            <li>A hangosság a vezérlő beállításától függ</li>
+                            <li>Enyhe mechanikai rezgés</li>
+                        </ul>
+                        
+                        <h3>✗ HIBÁS MŰKÖDÉS - AZONNAL ÁLLÍTSA LE:</h3>
+                        <ul>
+                            <li><strong>Kopogás, csattogás →</strong> Légrés probléma vagy ütközés</li>
+                            <li><strong>Kalapálás →</strong> Horgony ütközik a mágneshez</li>
+                            <li><strong>Csörgés →</strong> Laza csavar vagy alkatrész</li>
+                            <li><strong>Recsegés →</strong> Rugó probléma</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Műszaki Támogatás</h2>
+                        <p><strong>RNA Group - Központ</strong></p>
+                        <p>Rhein-Nadel Automation GmbH<br>
+                        Reichsweg 19-23<br>
+                        D-52068 Aachen, Németország</p>
+                        <p><strong>Tel:</strong> +49 (0) 241-5109-0<br>
+                        <strong>Fax:</strong> +49 (0) 241-5109-219<br>
+                        <strong>E-mail:</strong> vertrieb@RNA.de<br>
+                        <strong>Web:</strong> www.RNA.de</p>
+                    </div>
+                </div>
+            `
+        },
+        'rna-srhl-series': {
+            title: 'RNA SRHL Sorozat - Rezgőtányérok',
+            content: `
+                <div class="doc-content">
+                    <h1>1. RNA SRHL SOROZAT ÁTTEKINTÉSE</h1>
+                    
+                    <div class="doc-section">
+                        <h2>1.1 SRHL 400-1 Műszaki Adatok</h2>
+                        <ul>
+                            <li><strong>Méretek (Ø x H):</strong> 470 x 249 mm</li>
+                            <li><strong>Tömeg:</strong> 140 kg</li>
+                            <li><strong>Védelmi fokozat:</strong> IP 54</li>
+                            <li><strong>Teljesítményfelvétel:</strong> 1140 VA</li>
+                            <li><strong>Áramfelvétel:</strong> 5.7 A</li>
+                            <li><strong>Mágnes feszültség/frekvencia:</strong> 220V / 50Hz</li>
+                            <li><strong>Mágnesek száma:</strong> 2 db (YZUW 090 típus, piros)</li>
+                            <li><strong>Légrés:</strong> 2.0-2.8 mm</li>
+                            <li><strong>Rezgési frekvencia:</strong> 50 Hz</li>
+                            <li><strong>Rugócsomagok száma:</strong> 6 db</li>
+                            <li><strong>Rugók száma csomagokban:</strong> 4x4, 2x3</li>
+                            <li><strong>Rugó méretek (L x W):</strong> 139 (116) x 40 mm</li>
+                            <li><strong>Rugó vastagság:</strong> 2 mm</li>
+                            <li><strong>Csavar húzónyomaték:</strong> 120 Nm</li>
+                            <li><strong>Max. rezgő tömeg:</strong> 45 kg</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>1.2 Jellemzők</h2>
+                        <ul>
+                            <li>Nagy teljesítményű tálrezgő</li>
+                            <li>50 Hz rezgési frekvencia</li>
+                            <li>IP 54 védelmi fokozat</li>
+                            <li>Robusztus konstrukció</li>
+                            <li>6 rugócsomag megbízható működéshez</li>
+                        </ul>
+                    </div>
+
+                    <h1>2. BIZTONSÁGI ELŐÍRÁSOK</h1>
+
+                    <div class="danger-box">
+                        <h3>⚠️ VESZÉLY - Áramütés!</h3>
+                        <ul>
+                            <li>Minden elektromos munka előtt: ÁRAMTALANÍTÁS!</li>
+                            <li>Csak képzett villanyszerelő végezheti!</li>
+                            <li>Védőföldelés kötelező!</li>
+                        </ul>
+                    </div>
+
+                    <div class="warning-box">
+                        <h3>⚠️ Alapvető Biztonsági Követelmények</h3>
+                        <ul>
+                            <li>Győződjön meg róla, hogy a tápellátás védőföldjelése kifogástalan állapotban van</li>
+                            <li>Soha ne működtesse a rezgőtányért védőburkolatok és fedőlapok nélkül</li>
+                            <li>Ne működtesse robbanásveszélyes vagy nedves környezetben</li>
+                            <li>Csak a gyártóval egyeztetett konfigurációban használja</li>
+                        </ul>
+                    </div>
+
+                    <h1>3. TELEPÍTÉS ÉS ÜZEMBE HELYEZÉS</h1>
+
+                    <div class="doc-section">
+                        <h2>3.1 Telepítés</h2>
+                        <p>A telepítési helyen a rezgőtányért a speciálisan tervezett RNA tartóra kell felszerelni.</p>
+                        <p>A tartót úgy kell méretezni, hogy a rezgőtányérből ne jussanak át rezgések.</p>
+                        
+                        <p><strong>⚠️ FIGYELEM:</strong></p>
+                        <ul>
+                            <li>Ne akassza vagy mozgassa a rezgőtányért az orientáló eszköznél fogva</li>
+                            <li>Ügyeljen arra, hogy mozgatás közben ne ütközzön más tárgyakkal</li>
+                            <li>Mozgatás közben senki ne tartózkodjon a rezgőtányér alatt</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.2 Elektromos Csatlakoztatás</h2>
+                        <ol>
+                            <li>Csatlakoztassa a rezgőtányért közvetlenül vagy csatlakozón keresztül a vezérlőhöz</li>
+                            <li>Csatlakoztassa a vezérlő hálózati csatlakozását (220V / 50Hz)</li>
+                            <li>Ellenőrizze a védőföldelést</li>
+                        </ol>
+                    </div>
+
+                    <div class="warning-box">
+                        <h3>⚠️ Első Bekapcsolás</h3>
+                        <p><strong>A rezgőtányér tálcájának üresnek kell lennie!</strong></p>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>3.3 Működésellenőrzés</h2>
+                        <ol>
+                            <li>Állítsa a vezérlő célérték potenciométerét kb. 50%-ra</li>
+                            <li>Töltse fel a tálcát maximum 1/3 magasságig alkatrészekkel</li>
+                            <li>A gyári beállítások szerint 50-80% vezérlő pozícióban kell elérni a megígért szállítási teljesítményt</li>
+                        </ol>
+                        
+                        <p><strong>⚠️ Üzem közben ne fordítsa fel a célérték potenciométert a feltétlenül szükségesnél jobban!</strong></p>
+                    </div>
+
+                    <h1>4. KARBANTARTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>4.1 Rendszeres Ellenőrzések</h2>
+                        
+                        <h3>Napi:</h3>
+                        <ul>
+                            <li>Vizuális ellenőrzés</li>
+                            <li>Hang figyelése (egyenletes zümmögés)</li>
+                            <li>Rezgés megfigyelése</li>
+                        </ul>
+                        
+                        <h3>Heti:</h3>
+                        <ul>
+                            <li>Csavarok szorításának ellenőrzése</li>
+                            <li>Elektromos csatlakozások vizsgálata</li>
+                        </ul>
+                        
+                        <h3>Havi:</h3>
+                        <ul>
+                            <li>Rugók állapotának vizsgálata</li>
+                            <li>Légrés ellenőrzése (2.0-2.8 mm)</li>
+                            <li>Lengéscsillapítók ellenőrzése</li>
+                        </ul>
+                        
+                        <h3>Éves:</h3>
+                        <ul>
+                            <li>Teljes tisztítás</li>
+                            <li>Rugók alapos ellenőrzése és szükség esetén csere</li>
+                            <li>Légrés újramérése és beállítása</li>
+                            <li>Elektromos rendszer átfogó ellenőrzése</li>
+                            <li>Teljesítményteszt</li>
+                        </ul>
+                    </div>
+
+                    <div class="danger-box">
+                        <h2>⚠️ KRITIKUS BIZTONSÁGI ELŐÍRÁS</h2>
+                        <p><strong>SOHA NE OLAJOZZA VAGY ZSÍROZZA A RUGÓKAT!</strong></p>
+                    </div>
+
+                    <h1>5. HIBAELHÁRÍTÁS</h1>
+
+                    <div class="doc-section">
+                        <h2>5.1 Gyakori Problémák</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Probléma</th>
+                                    <th>Megoldás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nem mozog</td>
+                                    <td>Ellenőrizze áramellátást, vezérlőt, légrést</td>
+                                </tr>
+                                <tr>
+                                    <td>Gyenge szállítás</td>
+                                    <td>Hangolás ellenőrzése, terhelés csökkentése</td>
+                                </tr>
+                                <tr>
+                                    <td>Kopogó hang</td>
+                                    <td>Légrés növelése, szakszerű beállítás</td>
+                                </tr>
+                                <tr>
+                                    <td>Erős alaprezgés</td>
+                                    <td>Csavarok meghúzása, csillapítók cseréje</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Műszaki Támogatás</h2>
+                        <p><strong>RNA Group</strong></p>
+                        <p>Rhein-Nadel Automation GmbH<br>
+                        Reichsweg 19-23<br>
+                        D-52068 Aachen, Németország</p>
+                        <p><strong>Tel:</strong> +49 (0) 241-5109-0<br>
+                        <strong>Fax:</strong> +49 (0) 241-5109-219<br>
+                        <strong>E-mail:</strong> vertrieb@RNA.de<br>
+                        <strong>Web:</strong> www.RNA.de</p>
                     </div>
                 </div>
             `
@@ -2214,6 +3947,9 @@ function downloadDoc(type) {
         'bf': '01_BF_Sorozat_Taladagolok.docx',
         'hlf-m': '02_HLF-M_Sorozat_Linearis.docx',
         'klf': '03_KLF_Sorozat_Linearis.docx',
+        'wfl': 'WFL_Sorozat_Hasznalati_Utasitas-1.docx',
+        'rna-srcn': 'RNA_Sorozat_Hasznalati_Utasitas-1.docx',
+        'rna-srhl': 'RNA_Sorozat_Hasznalati_Utasitas-1.docx',
         'irg1s': 'Rezgovezerlok_Teljes_Dokumentacio-1.docx',
         'reovib': 'Rezgovezerlok_Teljes_Dokumentacio-1.docx',
         'fs26': 'Rezgovezerlok_Teljes_Dokumentacio-1.docx',
