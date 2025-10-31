@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFAG Rezgőberendezések - Dokumentáció</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigációs sáv -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>AFAG Rezgőberendezések</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Menü">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Főoldal -->
+    <main id="main-page" class="page active">
+        <div class="container">
+            <div class="hero">
+                <h2>Dokumentáció Központ</h2>
+                <p>Válasszon kategóriát a részletes dokumentációhoz</p>
+            </div>
+            
+            <div class="category-grid">
+                <div class="category-card" data-category="bowl-feeders">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 12h8M12 8v8"/>
+                        </svg>
+                    </div>
+                    <h3>Rezgőtányérok</h3>
+                    <p>BF Sorozat - Körkörös adagolók</p>
+                    <button class="btn-primary">Részletek</button>
+                </div>
+
+                <div class="category-card" data-category="linear-feeders">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 12h18M3 6h18M3 18h18"/>
+                        </svg>
+                    </div>
+                    <h3>Lineáris Rezgő Sínek</h3>
+                    <p>HLF-M és KLF Sorozatok</p>
+                    <button class="btn-primary">Részletek</button>
+                </div>
+
+                <div class="category-card" data-category="controllers">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 9h6M9 15h6"/>
+                        </svg>
+                    </div>
+                    <h3>Rezgő Vezérlők</h3>
+                    <p>IRG1-S, REOVIB, FS-26, SDVC31</p>
+                    <button class="btn-primary">Részletek</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rezgőtányérok oldal -->
+    <div id="bowl-feeders-page" class="page">
+        <div class="container">
+            <button class="btn-back">← Vissza a főoldalra</button>
+            <h2 class="page-title">Rezgőtányérok - BF Sorozat</h2>
+            <p class="page-description">Körkörös szállítás tálcában, szubkritikus hangolással</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="bowl_feeder.jpg" alt="BF Sorozat Rezgőtányér">
+                    </div>
+                    <div class="product-info">
+                        <h3>BF Sorozat</h3>
+                        <p class="product-models">BF20, BF25, BF30, BF35, BF40, BF50</p>
+                        <ul class="product-features">
+                            <li>Körkörös szállítás tálcában</li>
+                            <li>Szubkritikus hangolás</li>
+                            <li>100 Hz vagy 120 Hz</li>
+                            <li>Spirális pálya</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('bf-series')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Dokumentáció
+                            </button>
+                            <button class="btn-secondary" onclick="downloadDoc('bf')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Letöltés
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lineáris sínek oldal -->
+    <div id="linear-feeders-page" class="page">
+        <div class="container">
+            <button class="btn-back">← Vissza a főoldalra</button>
+            <h2 class="page-title">Lineáris Rezgő Sínek</h2>
+            <p class="page-description">Egyenes vonalú szállítás, precíz alkatrész pozicionálás</p>
+            
+            <div class="product-grid">
+                <!-- HLF-M Sorozat -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="hlfm_linear.webp" alt="HLF-M Sorozat">
+                    </div>
+                    <div class="product-info">
+                        <h3>HLF-M Sorozat</h3>
+                        <p class="product-models">HLF07-M, HLF12-M, HLF25-M, HLF50-M</p>
+                        <ul class="product-features">
+                            <li>Superkritikus hangolás</li>
+                            <li>Két egymás fölötti rezgő rész</li>
+                            <li>Gerjesztés fölött a sajátfrekvencián</li>
+                            <li>Példa: 100 Hz gerjesztés, ~97 Hz sajátfrekvencia</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('hlf-m-series')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Dokumentáció
+                            </button>
+                            <button class="btn-secondary" onclick="downloadDoc('hlf-m')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Letöltés
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KLF Sorozat -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="KLF_linear.webp" alt="KLF Sorozat">
+                    </div>
+                    <div class="product-info">
+                        <h3>KLF Sorozat</h3>
+                        <p class="product-models">KLF5, KLF7, KLF15, KLF25</p>
+                        <ul class="product-features">
+                            <li>Szubkritikus hangolás</li>
+                            <li>Rugalmas konfiguráció</li>
+                            <li>Gerjesztés alatt a sajátfrekvencián</li>
+                            <li>Példa: 100 Hz gerjesztés, ~104 Hz sajátfrekvencia</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('klf-series')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Dokumentáció
+                            </button>
+                            <button class="btn-secondary" onclick="downloadDoc('klf')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Letöltés
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vezérlők oldal -->
+    <div id="controllers-page" class="page">
+        <div class="container">
+            <button class="btn-back">← Vissza a főoldalra</button>
+            <h2 class="page-title">Rezgő Vezérlők</h2>
+            <p class="page-description">Elektronikus vezérlők rezgőadagolók és lineáris adagolók számára</p>
+            
+            <div class="product-grid">
+                <!-- IRG1-S -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="irg1s.png" alt="IRG1-S Vezérlő">
+                    </div>
+                    <div class="product-info">
+                        <h3>IRG1-S (Saventic)</h3>
+                        <p class="product-models">Analóg trimmer-alapú vezérlő</p>
+                        <ul class="product-features">
+                            <li>Fázisszög-szabályozás</li>
+                            <li>Trimmer potenciométerekkel</li>
+                            <li>50/100/60/120 Hz frekvencia</li>
+                            <li>Lágyindítás 0-4 sec</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('irg1s')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Dokumentáció
+                            </button>
+                            <button class="btn-secondary" onclick="downloadDoc('irg1s')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Letöltés
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REOVIB MFS 168 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="reovibmfs168.jpg" alt="REOVIB MFS 168">
+                    </div>
+                    <div class="product-info">
+                        <h3>REOVIB MFS 168 (REO Elektronik)</h3>
+                        <p class="product-models">Menüvezérlésű frekvenciavezérlő</p>
+                        <ul class="product-features">
+                            <li>LED kijelző és érintőpanel</li>
+                            <li>Numerikus kódok (000, F, I, E)</li>
+                            <li>30-140 Hz frekvencia</li>
+                            <li>Automata frekvenciavezérlés</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('reovib')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Dokumentáció
+                            </button>
+                            <button class="btn-secondary" onclick="downloadDoc('reovib')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Letöltés
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FS-26 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="fimotec_fs26.jpg" alt="FS-26">
+                    </div>
+                    <div class="product-info">
+                        <h3>FS-26 (Fimotec-Fischer)</h3>
+                        <p class="product-models">Többszintű hozzáférésű vezérlő</p>
+                        <ul class="product-features">
+                            <li>Ebene 0, 1, 2, 3 menüszintek</li>
+                            <li>Kód A és B hozzáférés</li>
+                            <li>5-200 Hz frekvencia</li>
+                            <li>Paraméter biztosítás</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('fs26')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Dokumentáció
+                            </button>
+                            <button class="btn-secondary" onclick="downloadDoc('fs26')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Letöltés
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDVC31 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="CUHSDVC31S_1.jpg" alt="SDVC31">
+                    </div>
+                    <div class="product-info">
+                        <h3>SDVC31 (CUH)</h3>
+                        <p class="product-models">Digitális frekvenciamodulációs vezérlő</p>
+                        <ul class="product-features">
+                            <li>SDVC31-S és SDVC31-M modellek</li>
+                            <li>40-400 Hz frekvencia</li>
+                            <li>Gyorsítási index (100-150)</li>
+                            <li>Hullámforma szabályozás</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('sdvc31')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Dokumentáció
+                            </button>
+                            <button class="btn-secondary" onclick="downloadDoc('sdvc31')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                Letöltés
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dokumentáció modal -->
+    <div id="doc-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" aria-label="Bezárás">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Dokumentáció tartalma ide kerül -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
