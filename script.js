@@ -1359,8 +1359,272 @@ function getDocumentation(type) {
                         </ul>
                     </div>
 
+                    <h1>6. RÉSZLETES MENÜSTRUKTÚRA</h1>
+
+                    <div class="info-box">
+                        <h2>6.1 Code 003 - Function Settings (Funkció Beállítások)</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Kijelző</th>
+                                    <th>Paraméter</th>
+                                    <th>Leírás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ESP 0</td>
+                                    <td>Alapérték használat kijelző panel</td>
+                                    <td>0 = Beállított pont kijelző panel használatával<br>1 = Külső pont 0...+10V<br>0 = Külső pont 0...I</td>
+                                </tr>
+                                <tr>
+                                    <td>ESP I</td>
+                                    <td>Külső alapérték forrás</td>
+                                    <td>I = Külső alapérték port I</td>
+                                </tr>
+                                <tr>
+                                    <td>0/I</td>
+                                    <td>Coarse/fine vezérlés</td>
+                                    <td>0 = 0...10 V (0...I) - 20 mA Potenciométer</td>
+                                </tr>
+                                <tr>
+                                    <td>0/I</td>
+                                    <td>Pálya szabályozás</td>
+                                    <td>0 = Pálya szabályozás<br>1 = Coarse/fine vezérlés két sebesség alapértékkel</td>
+                                </tr>
+                                <tr>
+                                    <td>CA I</td>
+                                    <td>Engedélyezés inverziója</td>
+                                    <td>0 = Engedélyezés<br>1 = Invert enable</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="warning-box">
+                            <p><strong>FONTOS:</strong> A külső alapérték használatához válassza az E.S.P. = I opciót a Menu C003-ban. Potenciométer használatakor válassza "Pot." = I opciót. A minimális rezgési szint beállításához: E.S.P. = 0, majd állítsa a rezgési szintet a kurzor gombokkal, végül E.S.P. = I.</p>
+                        </div>
+                    </div>
+
                     <div class="doc-section">
-                        <h2>Műszaki Adatok</h2>
+                        <h2>6.2 Code 096 - Feeder (Adagoló Beállítások)</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Kijelző</th>
+                                    <th>Paraméter</th>
+                                    <th>Tartomány</th>
+                                    <th>Gyári</th>
+                                    <th>Leírás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>000</td>
+                                    <td>Feeder alapérték</td>
+                                    <td>0...100%</td>
+                                    <td>-</td>
+                                    <td>Feeder átbocsátás 0-100%</td>
+                                </tr>
+                                <tr>
+                                    <td>020</td>
+                                    <td>Maximum teszt</td>
+                                    <td>100...5%</td>
+                                    <td>5%</td>
+                                    <td>Maximum teszt 100-5%</td>
+                                </tr>
+                                <tr>
+                                    <td>020</td>
+                                    <td>Rezgési frekvencia</td>
+                                    <td>30...140 Hz</td>
+                                    <td>100 Hz</td>
+                                    <td>Rezgési frekvencia [Hz]</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>Lágyindítás</td>
+                                    <td>0.1...4 Sec</td>
+                                    <td>0.1 Sec</td>
+                                    <td>Lágyindítás 0.1-4 Sec</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>Lágy leállítás</td>
+                                    <td>0.1...4 Sec</td>
+                                    <td>0.5 Sec</td>
+                                    <td>Lágy leállítási idő 0.1-4 Sec</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>6.3 Code 167 - Track Control (Pálya Szabályozás)</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Kijelző</th>
+                                    <th>Paraméter</th>
+                                    <th>Leírás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>020</td>
+                                    <td>Bekapcsolási késleltetés</td>
+                                    <td>0...15 Sec<br>Bekapcsolási késleltetési idő</td>
+                                </tr>
+                                <tr>
+                                    <td>020</td>
+                                    <td>Kikapcsolási késleltetés</td>
+                                    <td>0...15 Sec<br>Kikapcsolási késleltetési idő</td>
+                                </tr>
+                                <tr>
+                                    <td>SC 0</td>
+                                    <td>Pályavezérlés funkció inverziója</td>
+                                    <td>0 = SC funkció<br>1 = SC funkció invertált</td>
+                                </tr>
+                                <tr>
+                                    <td>CA I</td>
+                                    <td>Aktivitás időzítő funkció</td>
+                                    <td>0 = Aktivitás időzítő engedélyezett<br>1 = Aktivitás időzítő letiltva</td>
+                                </tr>
+                                <tr>
+                                    <td>E_</td>
+                                    <td>Szenzor időtúllépés idő</td>
+                                    <td>E_ = Szenzor késleltetési idő [sec]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><strong>Track Control funkció:</strong> Bekapcsolási és kikapcsolási késleltetések beállítása a pálya szabályozáshoz. A szenzor bemenet használatakor engedélyezhető vagy letiltható az aktivitás időzítő. BE/KI késleltetések 0-15 másodperc tartományban állíthatók.</p>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>6.4 Code 143 - Save Parameter Settings (Paraméter Mentés)</h2>
+                        <p><strong>Felhasználói paraméter beállítások mentése:</strong></p>
+                        <ol>
+                            <li>Válassza a Menu C143 menüpontot</li>
+                            <li>Válassza ki a "Save parameter settings" opciót</li>
+                            <li>Nyomja meg a megerősítő gombot</li>
+                            <li>A kijelzőn megjelenik: "All parameter settings are saved"</li>
+                            <li>A paraméterek a felhasználói C 143 alatt mentésre kerülnek</li>
+                        </ol>
+                        <div class="info-box">
+                            <p><strong>FONTOS:</strong> Az egyedi beállítások mentése lehetővé teszi a gyári beállítások visszaállítása után a korábban mentett konfiguráció gyors visszatöltését Menu C 210 segítségével.</p>
+                        </div>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>6.5 Code 210 - Recall Parameters (Paraméterek Visszatöltése)</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Kijelző</th>
+                                    <th>Funkció</th>
+                                    <th>Leírás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>FAC</td>
+                                    <td>Gyári beállítások</td>
+                                    <td>Gyári beállítások visszatöltése (Recall factory settings)</td>
+                                </tr>
+                                <tr>
+                                    <td>USPA</td>
+                                    <td>Felhasználói beállítások</td>
+                                    <td>Felhasználói mentett beállítások visszatöltése<br>(Recall settings saved under C 143)</td>
+                                </tr>
+                                <tr>
+                                    <td>USPA</td>
+                                    <td>Felhasználói paraméterek</td>
+                                    <td>Korábban C 143 alatt mentett paraméterek visszatöltése</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><strong>Visszatöltési eljárás:</strong></p>
+                        <ol>
+                            <li>Új készülék esetén először töltse vissza a gyári beállításokat: Menu C 210 "FAC"</li>
+                            <li>Paraméterek mentése: Menu C 143</li>
+                            <li>Későbbi visszatöltés: Menu C 210 "U.S.PA."</li>
+                            <li>Megerősítés után a paraméterek azonnal aktívvá válnak</li>
+                        </ol>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>6.6 Code 117 - Hide Menus (Menük Elrejtése)</h2>
+                        <p>A programozási menük elrejtése lehetővé teszi, hogy csak a beállított pont változtatható legyen, a többi menü nem lesz elérhető. Ez hasznos a véletlenszerű beállítás-módosítások elkerülésére.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Kijelző</th>
+                                    <th>Funkció</th>
+                                    <th>Leírás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hd.C 0</td>
+                                    <td>Menük láthatók</td>
+                                    <td>Paraméter beállítások elérhetők, csak alapérték változtatható</td>
+                                </tr>
+                                <tr>
+                                    <td>Hd.C I</td>
+                                    <td>Menük elrejtve</td>
+                                    <td>Paraméter menük megnyithatók normál módon</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>6.7 Code 008 - Regulation (Automata Szabályozás)</h2>
+                        <p>Az automata frekvenciavezérlés és frekvenciakeresés funkciói lehetővé teszik a rezgés automatikus optimalizálását.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Kijelző</th>
+                                    <th>Paraméter</th>
+                                    <th>Leírás</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>000</td>
+                                    <td>Feeder alapérték</td>
+                                    <td>0...100%<br>Feeder átbocsátás százalékban</td>
+                                </tr>
+                                <tr>
+                                    <td>020</td>
+                                    <td>Maximum teszt</td>
+                                    <td>100...5%<br>Maximális teszt tartomány</td>
+                                </tr>
+                                <tr>
+                                    <td>020</td>
+                                    <td>Rezgési frekvencia</td>
+                                    <td>30...140 Hz<br>Beállítható rezgési frekvencia</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>Szabályozás bekapcsolva</td>
+                                    <td>0 = Szabályozás letiltva<br>I = Szabályozás aktív</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3>Automata frekvencia funkciók:</h3>
+                        <ul>
+                            <li><strong>I.A.</strong> - Automata frekvenciavezérlés (Automatic frequency control): 0/I kapcsoló</li>
+                            <li><strong>A.F.C.</strong> - Automata frekvencia keresés (Automatic frequency search): 0/I kapcsoló</li>
+                            <li><strong>A.F.S.</strong> - Automata frekvencia keresés indítás: PUSH gomb a keresés elindításához</li>
+                        </ul>
+                        
+                        <div class="info-box">
+                            <p><strong>MEGJEGYZÉS:</strong> A rezgési frekvencia beállítása a hálózati frekvenciához igazodik. Az eltérő rezgési frekvencia a pálya tervezésétől függ. Az állandó idő az, amikor egy rezgés elindítva van vagy le van állítva.</p>
+                        </div>
+                    </div>
+
+                    <h1>7. MŰSZAKI ADATOK</h1>
+
+                    <div class="doc-section">
                         <table>
                             <thead>
                                 <tr>
