@@ -51,6 +51,8 @@ function showPage(pageId) {
     let targetPage;
     if (pageId === 'main') {
         targetPage = document.getElementById('main-page');
+    } else if (pageId === 'basics') {
+        targetPage = document.getElementById('basics-page');
     } else if (pageId === 'bowl-feeders') {
         targetPage = document.getElementById('bowl-feeders-page');
     } else if (pageId === 'linear-feeders') {
@@ -91,6 +93,575 @@ function closeModal() {
 // Dokumentáció tartalmak
 function getDocumentation(type) {
     const docs = {
+        'resonance': {
+            title: 'Rezonancia és Rezgésfelépítés',
+            content: `
+                <div class="doc-content">
+                    <h1>Rezonancia és Rezgésfelépítés</h1>
+                    
+                    <div class="doc-section">
+                        <h2>Az Alapelv - Rugó-tömeg Rendszer</h2>
+                        <h3>Komponensek:</h3>
+                        <ul>
+                            <li><strong>TÖMEG</strong> - nehéz fémrészek (szállítósín + rögzítések)</li>
+                            <li><strong>RUGÓ</strong> - levélrugók (hajlékony rétegelt fémlapok)</li>
+                            <li><strong>GERJESZTÉS</strong> - elektromágnes (100-120 Hz)</li>
+                        </ul>
+                        
+                        <h3>Kapcsolat:</h3>
+                        <ul>
+                            <li>Minél <strong>NAGYOBB</strong> a tömeg → LASSABB rezgés → ALACSONYABB sajátfrekvencia</li>
+                            <li>Minél <strong>MEREVEBB</strong> a rugó → GYORSABB rezgés → MAGASABB sajátfrekvencia</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>Hogyan Épül Fel a Rezgés?</h2>
+                        <h3>1. ELEKTROMOS ENERGIA</h3>
+                        <ul>
+                            <li>Hálózat: 50 Hz</li>
+                            <li>Vezérlő: "Teljes hullám" üzemmód</li>
+                            <li>Gerjesztés: 100 Hz</li>
+                        </ul>
+
+                        <h3>2. ELEKTROMÁGNESES ENERGIA</h3>
+                        <ul>
+                            <li>Áram a tekercsben (100x/sec)</li>
+                            <li>Mágneses mező keletkezik</li>
+                            <li>Mágnes vonzza a horzonyt</li>
+                            <li>Rángat másodpercenként 100-120-szor</li>
+                        </ul>
+
+                        <h3>3. MECHANIKUS ENERGIA</h3>
+                        <ul>
+                            <li>Horgony mozgása</li>
+                            <li>Hasznos tömeg rezeg (sín mozog)</li>
+                            <li>Levélrugók hajlanak</li>
+                            <li>Ellensúly ellentétes irányban rezeg</li>
+                        </ul>
+
+                        <h3>4. REZONANCIA FELERŐSÍTÉS</h3>
+                        <ul>
+                            <li>Gerjesztés közel a sajátfrekvenciához</li>
+                            <li>Amplitúdó MEGNŐ (rezonancia)</li>
+                            <li>Kis energia → NAGY mozgás</li>
+                        </ul>
+
+                        <h3>5. ALKATRÉSZ SZÁLLÍTÁS</h3>
+                        <ul>
+                            <li>Gyors rezgések</li>
+                            <li>Mikro-ugrások</li>
+                            <li>Alkatrész előrehalad</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Mi az a Sajátfrekvencia?</h2>
+                        <p><strong>Definíció:</strong> A sajátfrekvencia az a rezgési sebesség, amelyen a rendszer "természetesen" rezegni szeretne külső gerjesztés nélkül.</p>
+                        
+                        <h3>Példa - Mint egy gitárhúr:</h3>
+                        <ul>
+                            <li>Hosszú, laza húr → ALACSONY hang (alacsony frekvencia)</li>
+                            <li>Rövid, feszes húr → MAGAS hang (magas frekvencia)</li>
+                        </ul>
+                        
+                        <h3>Hangolás:</h3>
+                        <ul>
+                            <li>Állítólapok FELJEBB → merevebb → MAGASABB sajátfrekvencia</li>
+                            <li>Állítólapok LEJJEBB → puhább → ALACSONYABB sajátfrekvencia</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>Mi az a Rezonancia?</h2>
+                        <p><strong>Definíció:</strong> Rezonancia - Amikor a gerjesztési frekvencia megegyezik vagy közel van a sajátfrekvenciához, a rendszer "felerősíti" a rezgést.</p>
+                        
+                        <h3>Példa - Hintáztatás:</h3>
+                        <ul>
+                            <li>JÓ időzítés (rezonancia) → nagy lengések, kis erővel</li>
+                            <li>ROSSZ időzítés → alig mozdul, nagy erővel</li>
+                        </ul>
+                        
+                        <h3>AFAG gépeknél:</h3>
+                        <ul>
+                            <li>Rezonancia közelében működnek</li>
+                            <li>Kis elektromos energia → NAGY mechanikus amplitúdó</li>
+                            <li>Hatékony szállítás</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>Superkritikus vs Szubkritikus</h2>
+                        
+                        <h3>SUPERKRITIKUS (HLF-M sorozat):</h3>
+                        <p>Gerjesztés <strong>FÖLÖTT</strong> van a sajátfrekvencián</p>
+                        <p>Példa: Sajátfrekvencia 97 Hz, Gerjesztés 100 Hz (5% különbség)</p>
+                        <p><strong>Teszt viselkedés (lazításkor):</strong></p>
+                        <ul>
+                            <li>Azonnal CSÖKKEN a sebesség</li>
+                            <li>Már "túl vagyunk" a rezonancia csúcson</li>
+                        </ul>
+
+                        <h3>SZUBKRITIKUS (BF és KLF sorozatok):</h3>
+                        <p>Gerjesztés <strong>ALATT</strong> van a sajátfrekvencián</p>
+                        <p>Példa: Gerjesztés 100 Hz, Sajátfrekvencia 104 Hz (5% különbség)</p>
+                        <p><strong>Teszt viselkedés (lazításkor):</strong></p>
+                        <ul>
+                            <li>Először NŐ a sebesség</li>
+                            <li>CSÚCSOT ér</li>
+                            <li>Aztán CSÖKKEN</li>
+                            <li>"Még nem értük el" a rezonancia csúcsot</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        },
+        'bowl-structure': {
+            title: 'Rezgőtálak Felépítése',
+            content: `
+                <div class="doc-content">
+                    <h1>Rezgőtálak Általános Információk</h1>
+                    
+                    <div class="doc-section">
+                        <h2>Működési Elv</h2>
+                        <p>A hasznos tömeg (tálca + alaplemez) és az ellensúly (ellengyűrű + mágnes) <strong>ellentétes irányban rezeg</strong>. A reakcióerők az alapgyűrűn kiegyenlítődnek.</p>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>Jellemzők</h2>
+                        <ul>
+                            <li><strong>Körkörös szállítás</strong> tálcában</li>
+                            <li><strong>Spirális pálya</strong> az alkatrészek szétválogatásához</li>
+                            <li><strong>Szubkritikus hangolás</strong> (sajátfrekvencia 5%-kal FÖLÖTT a gerjesztésnek)</li>
+                            <li><strong>Rezgési frekvencia:</strong> 100 Hz vagy 120 Hz</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>Rögzítési Módok</h2>
+                        
+                        <h3>Központi oszlopos rögzítés (ajánlott):</h3>
+                        <ul>
+                            <li>✓ Forgatható</li>
+                            <li>✓ Magasságban állítható</li>
+                            <li>✓ Stabil</li>
+                        </ul>
+
+                        <h3>Közvetlen alaplapra szerelés:</h3>
+                        <ul>
+                            <li>3 gumifém puffer a tál alján</li>
+                            <li>Csavarozás az alaphoz</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        },
+        'linear-structure': {
+            title: 'Lineáris Sínek Felépítése',
+            content: `
+                <div class="doc-content">
+                    <h1>Lineáris Sínek Általános Információk</h1>
+                    
+                    <div class="doc-section">
+                        <h2>Működési Elv</h2>
+                        <p>Két egymás fölötti rezgő rész:</p>
+                        <ul>
+                            <li><strong>Felső rész:</strong> hasznos tömeg (szállítósín)</li>
+                            <li><strong>Alsó rész:</strong> ellensúly</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>Jellemzők</h2>
+                        <ul>
+                            <li><strong>Egyenes vonalú</strong> szállítás</li>
+                            <li><strong>Precíz</strong> alkatrész pozicionálás</li>
+                            <li><strong>Változó</strong> hosszúságú sínek</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>Szállítósín Ajánlott Méretek</h2>
+                        
+                        <h3>Keresztmetszeti arány:</h3>
+                        <p><strong>Magasság/Szélesség = 2/1</strong></p>
+                        <p>Ez biztosítja a rezgésállóságot és minimalizálja a saját rezgéseket.</p>
+
+                        <h3>Ajánlott anyag:</h3>
+                        <p><strong>Első választás: Szerszámacél</strong> (1.2842, 90MnCrV8)</p>
+                        <ul>
+                            <li>✓ Kopásálló</li>
+                            <li>✓ Stabil</li>
+                            <li>✓ Rezgésálló</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>Rögzítés az Alaphoz</h2>
+                        
+                        <h3>Rögzítési pontok:</h3>
+                        <ul>
+                            <li>Alaplapon lévő rések (slots) használata</li>
+                            <li>Minimum 2 rögzítési pont</li>
+                            <li>Pozíció pontosan beállítható</li>
+                        </ul>
+
+                        <h3>Alapkövetelmények:</h3>
+                        <ul>
+                            <li><strong>Rezgésálló alap</strong> (tömör beton vagy acél szerkezet)</li>
+                            <li><strong>Vastagság:</strong> minimum 20 mm acél</li>
+                            <li><strong>Szélesség:</strong> > 120 mm</li>
+                            <li>⚠️ Önhordó profilszerkezeteknél: megerősítés szükséges!</li>
+                        </ul>
+
+                        <h3>Csavarozás:</h3>
+                        <ul>
+                            <li>Fokozatosan, felváltva húzni</li>
+                            <li>Megfelelő nyomatékkal (lásd típus-specifikus dokumentumok)</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        },
+        'spring-types': {
+            title: 'Levélrugós vs Spirálrugós Rezgetés',
+            content: `
+                <div class="doc-content">
+                    <h1>Rugótípusok Összehasonlítása</h1>
+                    
+                    <div class="doc-section">
+                        <h2>🍃 Levélrugós Rendszer</h2>
+                        
+                        <h3>Felépítés:</h3>
+                        <ul>
+                            <li><strong>Rétegelt fémlapok</strong> - több lapos acéllemez egymásra pakolva</li>
+                            <li>Közbenső rétegek (intermediate layers)</li>
+                            <li>Rozsdamentes vagy rugóacél anyagból</li>
+                        </ul>
+
+                        <h3>Működés:</h3>
+                        <ul>
+                            <li>Hajlékony <strong>függőlegesen</strong> - lehetővé teszi a rezgést</li>
+                            <li>Merev <strong>vízszintesen</strong> - stabil vezetést biztosít</li>
+                            <li>Rétegek egymáson csúsznak a hajlítás során</li>
+                        </ul>
+
+                        <h3>✓ Előnyök:</h3>
+                        <ul>
+                            <li><strong>Kompakt kivitel</strong> - kevés helyet foglal</li>
+                            <li><strong>Precíz rezgés</strong> - egyenletes amplitúdó</li>
+                            <li><strong>Csendes működés</strong> - kevesebb zaj</li>
+                            <li><strong>Kis és közepes alkatrészekhez</strong> ideális</li>
+                            <li><strong>Finomhangolható</strong> - állítólapokkal</li>
+                            <li>Alacsonyabb reakcióerő az alapra</li>
+                        </ul>
+
+                        <h3>✗ Hátrányok:</h3>
+                        <ul>
+                            <li><strong>Kopó alkatrész</strong> - 2-5 év élettartam</li>
+                            <li>Túlterhelésre érzékeny - rugótörés veszély</li>
+                            <li>⚠️ TILOS kenni vagy zsírozni!</li>
+                            <li>Korlátozott terhelhetőség</li>
+                        </ul>
+
+                        <h3>Alkalmazás:</h3>
+                        <ul>
+                            <li>Elektromágneses rezgőtálak (BF, WFL, RNA sorozatok)</li>
+                            <li>Elektromágneses lineáris sínek (HLF-M, KLF sorozatok)</li>
+                            <li>Precíziós alkatrész kezelés</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>🌀 Spirálrugós (Coil Spring) Rendszer</h2>
+                        
+                        <h3>Felépítés:</h3>
+                        <ul>
+                            <li><strong>Csavart huzal</strong> - egyenletes átmérőjű drót spirál formában</li>
+                            <li>Hengeres vagy kúpos alakú</li>
+                            <li>Általában nehéz ipari acél</li>
+                        </ul>
+
+                        <h3>Működés:</h3>
+                        <ul>
+                            <li>Nyomó- vagy húzóerőt vesz fel</li>
+                            <li>Rugalmas összenyomódás</li>
+                            <li>Nagy teherbírású mechanikus rugalmasság</li>
+                        </ul>
+
+                        <h3>✓ Előnyök:</h3>
+                        <ul>
+                            <li><strong>Nagy terhelhetőség</strong> - nehéz anyagokhoz</li>
+                            <li><strong>Robusztus</strong> - ipari környezetben tartós</li>
+                            <li><strong>Nagy kapacitás</strong> - akár 5000 tonna/óra</li>
+                            <li><strong>Hosszú élettartam</strong> - kevésbé kopik</li>
+                            <li>Egyszerű karbantartás</li>
+                            <li>Könnyebben cserélhető</li>
+                        </ul>
+
+                        <h3>✗ Hátrányok:</h3>
+                        <ul>
+                            <li><strong>Nagyobb hely igény</strong> - terjedelmes</li>
+                            <li><strong>Zajosabb működés</strong></li>
+                            <li>Kevésbé precíz rezgés</li>
+                            <li>Nehezebb finomhangolás</li>
+                        </ul>
+
+                        <h3>Alkalmazás:</h3>
+                        <ul>
+                            <li>Nagy teljesítményű lineáris adagolók</li>
+                            <li>Nehéz anyagok szállítása (érc, szén, aggregátum)</li>
+                            <li>Stockpile és bulk anyag kezelés</li>
+                            <li>Rezonáns frekvenciás adagolók</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h2>📊 Összehasonlító Táblázat</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tulajdonság</th>
+                                    <th>Levélrugó</th>
+                                    <th>Spirálrugó</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Méret</strong></td>
+                                    <td>Kompakt</td>
+                                    <td>Nagy</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Terhelés</strong></td>
+                                    <td>Kis-közepes</td>
+                                    <td>Nagy-nagyon nagy</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Precizitás</strong></td>
+                                    <td>Magas</td>
+                                    <td>Közepes</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Zaj</strong></td>
+                                    <td>Alacsony</td>
+                                    <td>Magasabb</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Élettartam</strong></td>
+                                    <td>2-5 év</td>
+                                    <td>5-10+ év</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Karbantartás</strong></td>
+                                    <td>Gyakoribb csere</td>
+                                    <td>Ritkább csere</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ár</strong></td>
+                                    <td>Közepes</td>
+                                    <td>Magasabb</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="warning-box">
+                        <h2>Melyiket Válasszam?</h2>
+                        <h3>Levélrugó, ha:</h3>
+                        <ul>
+                            <li>Kis-közepes alkatrészeket kell kezelni</li>
+                            <li>Precíz pozicionálás szükséges</li>
+                            <li>Korlátozott hely áll rendelkezésre</li>
+                            <li>Elektromágneses meghajtás van</li>
+                        </ul>
+
+                        <h3>Spirálrugó, ha:</h3>
+                        <ul>
+                            <li>Nagy mennyiségű, nehéz anyagot kell mozgatni</li>
+                            <li>Ipari, kemény körülmények között üzemel</li>
+                            <li>Hosszú élettartam és alacsony karbantartás a cél</li>
+                            <li>Mechanikus vagy motoros meghajtás van</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        },
+        'components': {
+            title: 'Komponensek Leírása',
+            content: `
+                <div class="doc-content">
+                    <h1>Felépítés és Komponensek</h1>
+                    
+                    <div class="doc-section">
+                        <h2>🍃 Levélrugók (Leaf Springs)</h2>
+                        
+                        <h3>Felépítés:</h3>
+                        <ul>
+                            <li><strong>Rétegelt fémlapok</strong></li>
+                            <li>Közbenső rétegek (intermediate layers)</li>
+                            <li>Rozsdamentes vagy rugóacél</li>
+                        </ul>
+
+                        <h3>Funkció:</h3>
+                        <ul>
+                            <li>Összekötik a rezgő részeket az alaplappal</li>
+                            <li>Lehetővé teszik a rezgést</li>
+                            <li>Kiegyenlítik az erőket</li>
+                        </ul>
+
+                        <h3>Tulajdonságok:</h3>
+                        <ul>
+                            <li>✓ Hajlékony <strong>függőlegesen</strong></li>
+                            <li>✓ Merev <strong>vízszintesen</strong></li>
+                            <li>⚠️ <strong>Kopó alkatrész!</strong></li>
+                        </ul>
+
+                        <h3>Élettartam:</h3>
+                        <ul>
+                            <li><strong>Normál használat:</strong> 2-5 év</li>
+                            <li><strong>Túlterhelés esetén:</strong> rugótörés</li>
+                        </ul>
+                    </div>
+
+                    <div class="danger-box">
+                        <h3>⚠️ FONTOS: SOHA ne olajozd vagy zsírozd a rugókat!</h3>
+                        <ul>
+                            <li>Összeragadás veszélye</li>
+                            <li>Működési zavar</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>🧲 Elektromágneses Rendszer</h2>
+                        
+                        <h3>1. TEKERCS (Coil)</h3>
+                        <ul>
+                            <li>Rézhuzal, több száz menet</li>
+                            <li>Elszigetelt</li>
+                            <li>230V</li>
+                        </ul>
+
+                        <h3>2. VASMAG (Magnetic Core)</h3>
+                        <ul>
+                            <li>Laminált vaslemezek</li>
+                            <li>Csökkenti az örvényáramot</li>
+                            <li>Tartós, nem kopó rész</li>
+                        </ul>
+
+                        <h3>3. HORGONY (Anchor/Armature)</h3>
+                        <ul>
+                            <li>Mozgó vaslemez</li>
+                            <li>Rezgő részhez rögzítve</li>
+                            <li>Kopásra nem érzékeny</li>
+                        </ul>
+
+                        <h3>4. LÉGRÉS (Air Gap)</h3>
+                        <ul>
+                            <li>A mágnes és horgony közti távolság</li>
+                            <li>⚠️ <strong>KRITIKUS PARAMÉTER!</strong></li>
+                            <li><strong>Méret:</strong> 0.6 - 1.5 mm (típustól függően)</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Működés:</h3>
+                        <ul>
+                            <li><strong>Áram BE</strong> → Mágneses mező → Horgony vonzódik</li>
+                            <li><strong>Áram KI</strong> → Mező eltűnik → Rugó visszahúzza</li>
+                            <li><strong>Frekvencia:</strong> 100 impulzus/másodperc</li>
+                        </ul>
+
+                        <h3>Hőtermelés:</h3>
+                        <ul>
+                            <li><strong>Normál:</strong> 40-60°C (külső)</li>
+                            <li><strong>Maximum:</strong> ~80°C (belső mag)</li>
+                            <li>⚠️ Túlmelegedés → égett szag → <strong>AZONNALI LEÁLLÍTÁS!</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>📏 Légrés (Air Gap) - Részletesen</h2>
+                        
+                        <p><strong>Definíció:</strong> A légrés a mágnesmagja és a horgony közötti távolság.</p>
+
+                        <h3>Hibás légrés következményei:</h3>
+                        
+                        <div class="danger-box">
+                            <h4>TÚL KICSI (< előírt):</h4>
+                            <ul>
+                                <li>Horgony ÜTŐDIK</li>
+                                <li>Fémes csattogás</li>
+                                <li>Rugótörés veszély</li>
+                            </ul>
+                        </div>
+
+                        <div class="danger-box">
+                            <h4>TÚL NAGY (> előírt):</h4>
+                            <ul>
+                                <li>⚠️ MÁGNES TÚLMELEGEDIK</li>
+                                <li>Tekercs kiéghet</li>
+                                <li>Gyenge szállítás</li>
+                                <li><strong>VÉGZETES KÁROSODÁS!</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>⚖️ Trimmelő Súlyok</h2>
+                        
+                        <h3>Funkció:</h3>
+                        <p>Finomhangolás a hasznos tömeg és ellensúly közötti egyensúlyhoz.</p>
+
+                        <h3>Miért fontos?</h3>
+                        <p>Az ellenlengés csak akkor működik tökéletesen, ha:</p>
+                        <ul>
+                            <li>Tömegek kiegyensúlyozottak</li>
+                            <li>Súlypontok egy vonalban vannak</li>
+                        </ul>
+
+                        <h3>Elhelyezés:</h3>
+                        <ul>
+                            <li>Rezgő részek oldalán lévő bemélyedésekben</li>
+                            <li>Szimmetrikusan (bal-jobb)</li>
+                            <li>⚠️ Ne lógjon túl a gépen!</li>
+                        </ul>
+                    </div>
+
+                    <div class="doc-section">
+                        <h2>🔧 Állítólapok (Adjustment Plates)</h2>
+                        
+                        <h3>Funkció:</h3>
+                        <p>A sajátfrekvencia finomhangolása.</p>
+
+                        <h3>Működés:</h3>
+                        <ul>
+                            <li><strong>Állítólap FELJEBB:</strong>
+                                <ul>
+                                    <li>→ Rugó rövidebb szakaszon hajlik</li>
+                                    <li>→ MEREVEBB</li>
+                                    <li>→ MAGASABB sajátfrekvencia</li>
+                                </ul>
+                            </li>
+                            <li><strong>Állítólap LEJJEBB:</strong>
+                                <ul>
+                                    <li>→ Rugó hosszabb szakaszon hajlik</li>
+                                    <li>→ PUHÁBB</li>
+                                    <li>→ ALACSONYABB sajátfrekvencia</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>Beállítás:</h3>
+                        <ul>
+                            <li>Csúsztatható lapok minden rugószerkezetnél</li>
+                            <li>Csavarokkal rögzítve</li>
+                            <li>⚠️ <strong>FONTOS:</strong> Csak egy rugószerkezeten dolgozz egyszerre!</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        },
         'bf-series': {
             title: 'BF Sorozat - Táladagolók',
             content: `
