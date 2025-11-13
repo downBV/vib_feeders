@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezgőtányérok - Rezgőberendezések</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="color: white; text-decoration: none;">
+                    <h1>Rezgőberendezések</h1>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page active">
+        <div class="container">
+            <a href="index.html" class="btn-back">← Vissza a főoldalra</a>
+            <h2 class="page-title">Rezgőtányérok</h2>
+            <p class="page-description">Rezgőtányér meghajtások különböző gyártóktól</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="bowl_feeder.jpg" alt="BF Sorozat Rezgőtányér">
+                    </div>
+                    <div class="product-info">
+                        <h3>BF Sorozat (AFAG)</h3>
+                        <p class="product-models">BF20, BF25, BF30, BF35, BF40, BF50</p>
+                        <ul class="product-features">
+                            <li>Körkörös szállítás tálcában</li>
+                            <li>Szubkritikus hangolás</li>
+                            <li>100 Hz vagy 120 Hz</li>
+                            <li>Spirális pálya</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('bf-series')">Dokumentáció</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="wfl_talak.png" alt="WFL Sorozat">
+                    </div>
+                    <div class="product-info">
+                        <h3>WFL Sorozat (VIBROTEC AG)</h3>
+                        <p class="product-models">WFL 150, 200, 300, 450</p>
+                        <ul class="product-features">
+                            <li>WFL 150: Ø 440 mm, 30-40 kg</li>
+                            <li>WFL 200: Ø 470-500 mm</li>
+                            <li>WFL 300: Ø ~600 mm</li>
+                            <li>230V / 50Hz rugó-tömeg rendszer</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('wfl-series')">Dokumentáció</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="rna_talak.png" alt="RNA SRC-N">
+                    </div>
+                    <div class="product-info">
+                        <h3>RNA SRC-N Sorozat</h3>
+                        <p class="product-models">SRC-N 160, 250, 400, 630, 800</p>
+                        <ul class="product-features">
+                            <li>SRC-N 400-2: Ø 440 mm, 103 kg</li>
+                            <li>100 Hz, légrés 1.0-1.2 mm</li>
+                            <li>Nagykapacitású tálrezgő</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('rna-srcn')">Dokumentáció</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="doc-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" aria-label="Bezárás">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

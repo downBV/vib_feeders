@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineáris Rezgő Sínek - Rezgőberendezések</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="color: white; text-decoration: none;">
+                    <h1>Rezgőberendezések</h1>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page active">
+        <div class="container">
+            <a href="index.html" class="btn-back">← Vissza a főoldalra</a>
+            <h2 class="page-title">Lineáris Rezgő Sínek</h2>
+            <p class="page-description">Egyenes vonalú rezgő adagolók</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="hlfm_linear.webp" alt="HLF-M Sorozat">
+                    </div>
+                    <div class="product-info">
+                        <h3>HLF-M Sorozat (AFAG)</h3>
+                        <p class="product-models">Elektromágneses lineáris sínek</p>
+                        <ul class="product-features">
+                            <li>Superkritikus hangolás</li>
+                            <li>100 Hz frekvencia</li>
+                            <li>Egyenes vonalú szállítás</li>
+                            <li>Precíz pozicionálás</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('hlf-m')">Dokumentáció</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="KLF_linear.webp" alt="KLF Sorozat">
+                    </div>
+                    <div class="product-info">
+                        <h3>KLF Sorozat (AFAG)</h3>
+                        <p class="product-models">Kompakt lineáris adagolók</p>
+                        <ul class="product-features">
+                            <li>Szubkritikus hangolás</li>
+                            <li>Kompakt kivitel</li>
+                            <li>Változó sínhosszok</li>
+                            <li>Szerszámacél sín</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('klf')">Dokumentáció</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="doc-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" aria-label="Bezárás">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

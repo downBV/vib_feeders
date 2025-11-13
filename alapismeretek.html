@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alapismeretek - Rezgőberendezések</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigációs sáv -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="color: white; text-decoration: none;">
+                    <h1>Rezgőberendezések</h1>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alapismeretek oldal -->
+    <main class="page active">
+        <div class="container">
+            <a href="index.html" class="btn-back">← Vissza a főoldalra</a>
+            <h2 class="page-title">Alapismeretek</h2>
+            <p class="page-description">Rezgéstechnika alapjai és rendszer felépítés</p>
+            
+            <div class="product-grid">
+                <!-- Rezonancia és Rezgésfelépítés -->
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>⚡ Rezonancia és Rezgésfelépítés</h3>
+                        <ul class="product-features">
+                            <li><strong>Rugó-tömeg rendszer:</strong> Tömeg + Levélrugó + Elektromágnes</li>
+                            <li><strong>Energia láncolat:</strong> Elektromos → Mágneses → Mechanikus</li>
+                            <li><strong>Rezonancia:</strong> Gerjesztés a sajátfrekvencia közelében</li>
+                            <li><strong>Hatás:</strong> Kis energia → Nagy amplitúdó</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('resonance')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Részletes leírás
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rezgőtálak felépítése -->
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>🥣 Rezgőtálak Felépítése</h3>
+                        <ul class="product-features">
+                            <li><strong>Működés:</strong> Hasznos tömeg ⇄ Ellensúly</li>
+                            <li><strong>Szállítás:</strong> Körkörös, spirális pálya</li>
+                            <li><strong>Hangolás:</strong> Szubkritikus (5% fölött)</li>
+                            <li><strong>Frekvencia:</strong> 100 Hz vagy 120 Hz</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('bowl-structure')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Részletes leírás
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lineáris sínek felépítése -->
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>➡️ Lineáris Sínek Felépítése</h3>
+                        <ul class="product-features">
+                            <li><strong>Működés:</strong> Egyenes vonalú szállítás</li>
+                            <li><strong>Rétegződés:</strong> Felső (sín) + Alsó (ellensúly)</li>
+                            <li><strong>Arány:</strong> Magasság/Szélesség = 2:1</li>
+                            <li><strong>Anyag:</strong> Szerszámacél (kopásálló)</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('linear-structure')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Részletes leírás
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Levélrugós vs Spirálrugós -->
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>🔧 Levélrugós vs Spirálrugós Rezgetés</h3>
+                        <ul class="product-features">
+                            <li><strong>Levélrugó:</strong> Rétegelt fémlapok, hajlékony</li>
+                            <li><strong>Előny:</strong> Kompakt, precíz rezgés, csendes</li>
+                            <li><strong>Spirálrugó:</strong> Csavart huzal, nagy terhelés</li>
+                            <li><strong>Előny:</strong> Nagy teljesítmény, robusztus</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('spring-types')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Részletes leírás
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Komponensek -->
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>⚙️ Komponensek Leírása</h3>
+                        <ul class="product-features">
+                            <li><strong>Levélrugók:</strong> Rezgés lehetővé tétele</li>
+                            <li><strong>Elektromágnes:</strong> Gerjesztés (100-120 Hz)</li>
+                            <li><strong>Légrés:</strong> 0.6-1.5 mm (kritikus!)</li>
+                            <li><strong>Állítólapok:</strong> Sajátfrekvencia hangolás</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('components')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                                </svg>
+                                Részletes leírás
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Dokumentáció modal -->
+    <div id="doc-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" aria-label="Bezárás">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Dokumentáció tartalma ide kerül -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

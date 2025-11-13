@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezgővezérlők - Rezgőberendezések</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="color: white; text-decoration: none;">
+                    <h1>Rezgőberendezések</h1>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page active">
+        <div class="container">
+            <a href="index.html" class="btn-back">← Vissza a főoldalra</a>
+            <h2 class="page-title">Rezgővezérlők</h2>
+            <p class="page-description">Rezgőberendezések szabályzói</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="irg1s.png" alt="IRG1-S">
+                    </div>
+                    <div class="product-info">
+                        <h3>IRG1-S (Saventic)</h3>
+                        <p class="product-models">Analóg vezérlő</p>
+                        <ul class="product-features">
+                            <li>Fázisszög-szabályozás</li>
+                            <li>Trimmer potenciométerek</li>
+                            <li>50/100/60/120 Hz</li>
+                            <li>Lágyindítás 0-4 sec</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('irg1s')">Dokumentáció</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="reovibmfs168.jpg" alt="REOVIB MFS 168">
+                    </div>
+                    <div class="product-info">
+                        <h3>REOVIB MFS 168 (REO Elektronik)</h3>
+                        <p class="product-models">Menüvezérlésű</p>
+                        <ul class="product-features">
+                            <li>LED kijelző</li>
+                            <li>30-140 Hz frekvencia</li>
+                            <li>Automata vezérlés</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('reovib')">Dokumentáció</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="fimotec_fs26.jpg" alt="FS-26">
+                    </div>
+                    <div class="product-info">
+                        <h3>FS-26 (Fimotec-Fischer)</h3>
+                        <p class="product-models">Többszintű hozzáférés</p>
+                        <ul class="product-features">
+                            <li>Ebene 0, 1, 2, 3 szintek</li>
+                            <li>Kód A és B</li>
+                            <li>5-200 Hz</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('fs26')">Dokumentáció</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="CUHSDVC31S_1.jpg" alt="SDVC31">
+                    </div>
+                    <div class="product-info">
+                        <h3>SDVC31 (CUH)</h3>
+                        <p class="product-models">Digitális vezérlő</p>
+                        <ul class="product-features">
+                            <li>40-400 Hz frekvencia</li>
+                            <li>Gyorsítási index</li>
+                            <li>Hullámforma szabályozás</li>
+                        </ul>
+                        <div class="product-actions">
+                            <button class="btn-primary" onclick="showDocumentation('sdvc31')">Dokumentáció</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="doc-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" aria-label="Bezárás">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
